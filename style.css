@@ -2,6 +2,14 @@
 
 }
 
+.title {
+
+}
+
+.title--h2 {
+
+}
+
 .button {
 
 }
@@ -38,11 +46,11 @@
 
 }
 
-.user-block__login {
+.user-block__link {
 
 }
 
-.user-block__login--disable {
+.user-block__link--disable {
 
 }
 
@@ -62,10 +70,62 @@
 
 }
 
-.nav__exp-list {
+.nav__ext-list {
 
 }
 
-.nav__exp-link {
+.nav__block {
 
+}
+
+.nav__ext-link {
+
+}
+
+.slider {
+
+}
+
+.slider__header {
+
+}
+
+.slider__number {
+
+}
+
+.slider__wrapper {
+
+}
+
+.slider__inner {
+
+}
+
+.slider__button {
+
+}
+
+.slider__button--prev {
+
+}
+
+.slider__button--next {
+
+}
+
+.slider__img {
+
+}
+
+.slider__description {
+
+}
+
+.slider__label {
+
+}
+
+.slider__table {
+  
 }

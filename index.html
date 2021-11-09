@@ -17,44 +17,76 @@
                 <input class="search__input" id="search" type="text" placeholder="Поиск по сайту">
               </label>
             </form>
-            <ul class="user-block">
-              <li><a href="#" class="user-block__login">Войти</a></li>
-              <li><a href="#" class="user-block__login user-block__login--disable">Выйти</a></li>
-              <li><a href="#" class="user-block__login">Сравнить</a></li>
-              <li><a href="#" class="user-block__login">Корзина</a></li>
-            </ul>
+            <div class="user-block">
+              <a href="#" class="user-block__link">Войти</a>
+              <a href="#" class="user-block__link user-block__link--disable">Выйти</a>
+              <a href="#" class="user-block__link">Сравнить</a>
+              <a href="#" class="user-block__link">Корзина</a>
+            </div>
           </div>
 
           <nav class="nav">
-            <ul class="nav__list">
-              <li>
-                <a href="#" class="nav__link">Каталог товаров</a>
-                <button class="button nav__button"></button>
-              </li>
-              <li><a href="#" class="nav__link">Доставка</a></li>
-              <li><a href="#" class="nav__link">Гарантия</a></li>
-              <li><a href="#" class="nav__link">Контакты</a></li>
-            </ul>
-
-            <ul class="nav__exp-list">
-              <li>
-                <a href="" class="nav__exp-link">Виртуальная реальность</a>
-                <a href="" class="nav__exp-link">Моноподы для cелфи</a>
-                <a href="" class="nav__exp-link">Экшн-камеры</a>
-              </li>
-              <li>
-                <a href="" class="nav__exp-link">Фитнес-браслеты</a>
-                <a href="" class="nav__exp-link">Умные часы</a>
-              </li>
-              <li>
-                <a href="" class="nav__exp-link">Квадрокоптеры</a>
-              </li>
-            </ul>
+            <div class="nav__list">
+              <a href="#" class="nav__link">Каталог товаров</a>
+              <button class="nav__button"></button>
+              <a href="#" class="nav__link">Доставка</a>
+              <a href="#" class="nav__link">Гарантия</a>
+              <a href="#" class="nav__link">Контакты</a>
+            </div>
+            <div class="nav__ext-list">
+              <div class="nav__block">
+                <a href="#" class="nav__ext-link">Виртуальная реальность</a>
+                <a href="#" class="nav__ext-link">Моноподы для cелфи</a>
+                <a href="#" class="nav__ext-link">Экшн-камеры</a>
+              </div>
+              <div class="nav__block">
+                <a href="#" class="nav__ext-link">Фитнес-браслеты</a>
+                <a href="#" class="nav__ext-link">Умные часы</a>
+              </div>
+              <div class="nav__block">
+                <a href="#" class="nav__ext-link">Квадрокоптеры</a>
+              </div>
+            </div>
           </nav>
         </div>
       </div>
     </header>
+
     <main>
+      <section class="slider layout">
+        <div class="slider__header">
+          <span class="slider__number">01</span>
+        </div>
+        <div class="slider__wrapper">
+          <div class="slider__inner">
+            <button class="slider__button slider__button--prev"></button>
+            <img class="slider__img" src="" alt="Изображение квадрокопера">
+            <button class="slider__button slider__button--next"></button>
+          </div>
+          <div class="slider__inner">
+            <h2 class="title title--h2">Порхает как бабочка,
+              жалит как пчела!</h2>
+            <p class="slider__description">
+              Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную
+              камеру.
+            </p>
+            <button class="button">Подробнее</button>
+            <label class="slider__label">
+              <input class="slider__radio" type="radio" id="first-slide">
+              <input class="slider__radio" type="radio" id="second-slide">
+              <input class="slider__radio" type="radio" id="third-slide">
+            </label>
+            <table class="slider__table">
+              <th>800 м</th>
+              <th>50 м</th>
+              <tr>
+                <td>Дальность полета</td>
+                <td>Радиус поражения</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
     </footer>
