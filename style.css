@@ -86,22 +86,6 @@
 
 }
 
-.slider__header {
-
-}
-
-.slider__number {
-
-}
-
-.slider__wrapper {
-
-}
-
-.slider__inner {
-
-}
-
 .slider__button {
 
 }
@@ -114,18 +98,38 @@
 
 }
 
-.slider__img {
+.slider__switch {
 
 }
 
-.slider__description {
+.slider__radio-button {
 
 }
 
-.slider__label {
+.slide {
+
+}
+
+.slide__inner {
+
+}
+
+.slide__img {
+
+}
+
+.slide__number {
+
+}
+
+.slide__description {
+
+}
+
+.slide__button {
 
 }
 
 .slider__table {
-  
+
 }

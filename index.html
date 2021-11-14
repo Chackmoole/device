@@ -53,32 +53,27 @@
     </header>
 
     <main>
+
       <section class="slider layout">
-        <div class="slider__header">
-          <span class="slider__number">01</span>
-        </div>
-        <div class="slider__wrapper">
-          <div class="slider__inner">
-            <button class="slider__button slider__button--prev"></button>
-            <img class="slider__img" src="" alt="Изображение квадрокопера">
-            <button class="slider__button slider__button--next"></button>
+        <div class="slide">
+          <div class="slide__inner">
+            <img class="slide__img " src="" alt="Изображение квадрокоптера">
           </div>
-          <div class="slider__inner">
+
+          <div class="slide__inner">
+            <span class="slide__number">01</span>
             <h2 class="title title--h2">Порхает как бабочка,
               жалит как пчела!</h2>
-            <p class="slider__description">
-              Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную
-              камеру.
+            <p class="slide__description">
+              Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+              замаскированным под стандартную камеру.
             </p>
-            <button class="button">Подробнее</button>
-            <label class="slider__label">
-              <input class="slider__radio" type="radio" id="first-slide">
-              <input class="slider__radio" type="radio" id="second-slide">
-              <input class="slider__radio" type="radio" id="third-slide">
-            </label>
-            <table class="slider__table">
-              <th>800 м</th>
-              <th>50 м</th>
+            <button class="button slide__button">Подробнее</button>
+            <table class="slide__table">
+              <tr>
+                <th>800 м</th>
+                <th>50 м</th>
+              </tr>
               <tr>
                 <td>Дальность полета</td>
                 <td>Радиус поражения</td>
@@ -86,7 +81,17 @@
             </table>
           </div>
         </div>
+
+        <button class="slider__button slider__button--prev"></button>
+        <button class="slider__button slider__button--next"></button>
+
+        <div class="slider__switch">
+          <button class="slider__radio-button"></button>
+          <button class="slider__radio-button"></button>
+          <button class="slider__radio-button"></button>
+        </div>
       </section>
+
     </main>
     <footer>
     </footer>
