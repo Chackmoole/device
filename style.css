@@ -10,7 +10,15 @@
 
 }
 
+.title--3 {
+
+}
+
 .button {
+
+}
+
+.visually-hidden {
 
 }
 
@@ -82,54 +90,126 @@
 
 }
 
-.slider {
+.main-slider {
 
 }
 
-.slider__button {
+.main-slider__button {
 
 }
 
-.slider__button--prev {
+.main-slider__button--prev {
 
 }
 
-.slider__button--next {
+.main-slider__button--next {
 
 }
 
-.slider__switch {
+.main-slider__switch {
 
 }
 
-.slider__radio-button {
+.main-slider__radio-button {
 
 }
 
-.slide {
+.main-slide {
 
 }
 
-.slide__inner {
+.main-slide__inner {
 
 }
 
-.slide__img {
+.main-slide__img {
 
 }
 
-.slide__number {
+.main-slide__number {
 
 }
 
-.slide__description {
+.main-slide__description {
 
 }
 
-.slide__button {
+.main-slide__button {
 
 }
 
-.slider__table {
+.main-first-slider__table {
+
+}
+
+.sections {
+
+}
+
+.sections__link {
+
+}
+
+.sections__img {
+
+}
+
+.sections__descriptions {
+
+}
+
+.second-slider {
+
+}
+
+.second-slider__inner {
+
+}
+
+.second-slider__button {
+
+}
+
+.second-slide {
+
+}
+
+.second-slide__inner {
+
+}
+
+.second-slide__description {
+
+}
+
+.delivery {
+
+}
+
+.delivery__description {
+
+}
+
+.delivery__button {
+
+}
+
+.about {
+
+}
+
+.about__inner {
+
+}
+
+.about__description {
+
+}
+
+.about__list {
+
+}
+
+.about__link {
 
 }
