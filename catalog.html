@@ -51,5 +51,78 @@
         </div>
       </div>
     </header>
+    <main class="catalog">
+      <div class="heading">
+        <h2 class="title title--h2">Моноподы для селфи</h2>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item">Главная</li>
+          <li class="breadcrumbs__item">Каталог товаров</li>
+          <li class="breadcrumbs__item">Моноподы для селфи</li>
+        </ul>
+      </div>
+      <div class="catalog__inner">
+        <section class="filter">
+          <h3 class="filter__title">Фильтр:</h3>
+          <form action="" method="get">
+            <fieldset>
+              <legend class="filter__subtitle">Стоимость</legend>
+              <div class="filter__slide">
+                <div class="filter__scale"></div>
+                <div class="filter__scale filter__scale--active"></div>
+                <button class="filter__btn filter__btn--min"></button>
+                <button class="filter__btn filter__btn--max"></button>
+              </div>
+              <label>От
+                <input class="filter__input filter__input--low" type="text" placeholder="0">
+              </label>
+              <label>До
+                <input class="filter__input filter__input--high" type="text" placeholder="500">
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <legend class="filter__subtitle">Цвет</legend>
+              <label class="filter__label">
+                <input class="filter__checkbox" type="checkbox" checked="checked">
+                Черный
+              </label>
+              <label class="filter__label">
+                <input class="filter__checkbox" type="checkbox" checked="checked">
+                Белый
+              </label>
+              <label class="filter__label">
+                <input class="filter__checkbox" type="checkbox">
+                Синий
+              </label>
+              <label class="filter__label">
+                <input class="filter__checkbox" type="checkbox">
+                Красный
+              </label>
+              <label class="filter__label">
+                <input class="filter__checkbox" type="checkbox">
+                Розовый
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Bluetooth</legend>
+              <label>
+                <input class="filter__radio-btn" type="radio" name="Bluetooth" value="BluetoothOn" checked="checked">
+                Да
+              </label>
+              <label>
+                <input class="filter__radio-btn" type="radio" name="Bluetooth" value="BluetoothOff">
+                Нет
+              </label>
+            </fieldset>
+            <button class="button">Показать</button>
+          </form>
+        </section>
+      </div>
+
+    </main>
+    <footer>
+
+    </footer>
   </body>
 </html>
