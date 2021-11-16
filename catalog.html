@@ -60,7 +60,7 @@
           <li class="breadcrumbs__item">Моноподы для селфи</li>
         </ul>
       </div>
-      <div class="catalog__inner">
+      <div class="catalog__wrapper">
         <section class="filter">
           <h3 class="filter__title">Фильтр:</h3>
           <form action="" method="get">
@@ -115,9 +115,69 @@
                 Нет
               </label>
             </fieldset>
-            <button class="button">Показать</button>
+            <button class="primary-button">Показать</button>
           </form>
         </section>
+        <div class="catalog__inner">
+          <div class="sorting">
+            <h3 class="title title--h3">сортировка:</h3>
+            <form action="">
+              <label>
+                <select name="sorting">
+                  <option value="popular" selected>Сначала популярные</option>
+                  <option value="cost-low">Сначала дешёвые</option>
+                  <option value="cost-high">Сначала дорогие</option>
+                </select>
+              </label>
+            </form>
+            <div class="sorting__inner">
+              <a class="sorting__link sorting__link--up" href="#">
+                <span class="visually-hidden">сортировать по возрастания</span>
+              </a>
+              <a class="sorting__link sorting__link--down sorting__link--active" href="#">
+                <span class="visually-hidden">сортировать по убыванию</span>
+              </a>
+            </div>
+          </div>
+          <ul class="cards-list">
+            <li class="card">
+              <img class="card__img" src="" alt="Любительская селфи-палка">
+              <p class="card__description">Любительская селфи-палка</p>
+              <p class="card__cost">500 ₽</p>
+              <button class="primary-button card__button">Подробнее</button>
+            </li>
+            <li class="card">
+              <img class="card__img" src="" alt="Профессиональная селфи-палка ">
+              <p class="card__description">Профессиональная селфи-палка </p>
+              <p class="card__cost">1 500 ₽</p>
+              <button class="primary-button card__button">Подробнее</button>
+            </li>
+            <li class="card">
+              <img class="card__img" src="" alt="Непотопляемая селфи-палка">
+              <p class="card__description">Непотопляемая селфи-палка</p>
+              <p class="card__cost">2 500 ₽</p>
+              <button class="primary-button card__button">Подробнее</button>
+            </li>
+            <li class="card">
+              <img class="card__img" src="" alt="">
+              <p class="card__description">Селфи-палка «Следуй за мной»</p>
+              <p class="card__cost">4 900 ₽</p>
+              <button class="primary-button card__button">Подробнее</button>
+            </li>
+          </ul>
+          <button class="secondary-button button-more">Загрузить еще</button>
+          <section class="pagination">
+            <a href="#" class="pagination__link pagination__link--nav">Назад</a>
+            <div>
+              <a href="#" class="pagination__link">1</a>
+              <a href="#" class="pagination__link">2</a>
+              <a href="#" class="pagination__link">3</a>
+              <a href="#" class="pagination__link">...</a>
+              <a href="#" class="pagination__link">15</a>
+            </div>
+            <a href="#" class="pagination__link pagination__link--nav">Назад</a>
+          </section>
+        </div>
       </div>
 
     </main>

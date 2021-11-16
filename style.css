@@ -14,7 +14,15 @@
 
 }
 
-.button {
+.primary-button {
+
+}
+
+.secondary-button {
+
+}
+
+.button-more {
 
 }
 
@@ -246,6 +254,10 @@
 
 }
 
+.catalog__wrapper {
+
+}
+
 .catalog__inner {
 
 }
@@ -319,5 +331,61 @@
 }
 
 .filter__radio-btn {
+
+}
+
+.sorting {
+
+}
+
+.sorting__inner {
+
+}
+
+.sorting__link {
+
+}
+
+.sorting__link--down {
+
+}
+
+.sorting__link--active {
+
+}
+
+.cards-list {
+
+}
+
+.card {
+
+}
+
+.card__img {
+
+}
+
+.card__description {
+
+}
+
+.card__cost {
+
+}
+
+.card__button {
+
+}
+
+.pagination {
+
+}
+
+.pagination__link {
+
+}
+
+.pagination__link--nav {
 
 }
