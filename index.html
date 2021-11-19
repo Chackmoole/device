@@ -14,7 +14,7 @@
           <div class="header__inner">
             <form class="search" action="" method="post">
               <label for="search">
-                <input class="search__input" id="search" type="text" placeholder="Поиск по сайту">
+                <input class="search__input" name="search" id="search" type="text" placeholder="Поиск по сайту">
               </label>
             </form>
             <div class="user-block">
@@ -185,31 +185,25 @@
         </div>
 
         <div class="service">
-          <div class="service__inner">
-            <h2 class="title title--h2">Доставка</h2>
-            <p class="service__description">Мы с удовольствием доставим ваш товар прямо
-              к вашему подъезду совершенно бесплатно! Ведь
-              мы неплохо заработаем, поднимая его на ваш этаж.
-            </p>
-          </div>
+          <h2 class="title title--h2">Доставка</h2>
+          <p class="service__description">Мы с удовольствием доставим ваш товар прямо
+            к вашему подъезду совершенно бесплатно! Ведь
+            мы неплохо заработаем, поднимая его на ваш этаж.
+          </p>
         </div>
         <div class="service">
-          <div class="service__inner">
-            <h2 class="title title--h2">Гарантия</h2>
-            <p class="service__description">Если из-за возгорания купленного у нас товара у вас
-              сгорит дом — не переживайте, мы выдадим вам новый.
-              Товар, не дом, конечно же.
-            </p>
-          </div>
+          <h2 class="title title--h2">Гарантия</h2>
+          <p class="service__description">Если из-за возгорания купленного у нас товара у вас
+            сгорит дом — не переживайте, мы выдадим вам новый.
+            Товар, не дом, конечно же.
+          </p>
         </div>
         <div class="service">
-          <div class="service__inner">
-            <h2 class="title title--h2">Кредит</h2>
-            <p class="service__description">Залезть в долговую яму стало проще!
-              Кредитные консультанты подберут для вас наиболее выгодные условия кредита.
-              Выгодные для банка, разумеется.
-            </p>
-          </div>
+          <h2 class="title title--h2">Кредит</h2>
+          <p class="service__description">Залезть в долговую яму стало проще!
+            Кредитные консультанты подберут для вас наиболее выгодные условия кредита.
+            Выгодные для банка, разумеется.
+          </p>
         </div>
       </section>
 
@@ -273,7 +267,7 @@
 
         <div class="mailing__wrapper">
           <label class="mailing__label" for="mailing">
-            <input class="mailing__input" id="mailing" type="submit">
+            <input class="mailing__input" name="mailing" id="mailing" type="submit">
           </label>
           <button class="primary-button mailing__button">
             Подписаться
@@ -305,7 +299,7 @@
         <span class="footer__copyright"><span class="visually-hidden">Ссылка на HTML ACADEMY</span></span>
       </div>
     </footer>
-    
+
     <section class="cart-popup">
       <ul class="cart-popup__list">
         <li>
@@ -328,14 +322,14 @@
       <form class="cart-popup__form" method="get">
         <label class="cart-popup__label" for="goods">
           Товаров:
-          <input class="cart-popup__input" id="goods" type="text" value="2">
+          <input class="cart-popup__input" name="goods" id="goods" type="text" value="2">
         </label>
         <label class="cart-popup__label" for="cart-cost">
           Сумма:
-          <input class="cart-popup__input" id="cart-cost" type="text" value="2000">
+          <input class="cart-popup__input" name="cart-cost" id="cart-cost" type="text" value="2000">
           ₽
         </label>
-        <button class="cart-popup__button"></button>
+        <input class="cart-popup__button" type="submit" value="Открыть корзину">
       </form>
     </section>
 
@@ -345,12 +339,12 @@
       <form class="delivery-popup__form">
         <label class="delivery-popup__label" for="name">
           Ваше имя:
-          <input class="delivery-popup__input" id="name" type="text" placeholder="Имя Фамилия">
+          <input class="delivery-popup__input" name="name" id="name" type="text" placeholder="Имя Фамилия">
           <span class="delivery-popup__description delivery-popup__description--error">Пожалуйста, представьтесь</span>
         </label>
         <label class="delivery-popup__label" for="email">
           Ваш e-mail:
-          <input class="delivery-popup__input" id="email" type="text" placeholder="Введите вашу почту">
+          <input class="delivery-popup__input" name="email" id="email" type="text" placeholder="Введите вашу почту">
           <span class="delivery-popup__description">Забавный у вас адрес</span>
         </label>
         <label class="delivery-popup__label" for="delivery-about">
@@ -367,7 +361,7 @@
           <button class="delivery-popup__button delivery-popup__button-increase">
             <span class="visually-hidden">уменьшить количество товаров</span>
           </button>
-          <input class="delivery-popup__counter" id="counter" type="text" value="1">
+          <input class="delivery-popup__counter" name="counter" id="counter" type="text" value="1">
           <button class="delivery-popup__button delivery-popup__button-decrease">
             <span class="visually-hidden">увеличить количество товаров</span>
           </button>

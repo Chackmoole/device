@@ -14,7 +14,7 @@
           <div class="header__inner">
             <form class="search" action="" method="post">
               <label for="search">
-                <input class="search__input" id="search" type="text" placeholder="Поиск по сайту">
+                <input class="search__input" name="search" id="search" type="text" placeholder="Поиск по сайту">
               </label>
             </form>
             <div class="user-block">
@@ -73,33 +73,33 @@
                 <button class="filter__btn filter__btn--max"></button>
               </div>
               <label>От
-                <input class="filter__input filter__input--low" type="text" placeholder="0">
+                <input class="filter__input filter__input--low" name="cost-min" type="text" placeholder="0">
               </label>
               <label>До
-                <input class="filter__input filter__input--high" type="text" placeholder="500">
+                <input class="filter__input filter__input--high" name="cost-high" type="text" placeholder="500">
               </label>
             </fieldset>
 
             <fieldset>
               <legend class="filter__subtitle">Цвет</legend>
               <label class="filter__label">
-                <input class="filter__checkbox" type="checkbox" checked="checked">
+                <input class="filter__checkbox" name="color-black" type="checkbox" checked>
                 Черный
               </label>
               <label class="filter__label">
-                <input class="filter__checkbox" type="checkbox" checked="checked">
+                <input class="filter__checkbox" name="color-white" type="checkbox" checked>
                 Белый
               </label>
               <label class="filter__label">
-                <input class="filter__checkbox" type="checkbox">
+                <input class="filter__checkbox" name="color-blue" type="checkbox">
                 Синий
               </label>
               <label class="filter__label">
-                <input class="filter__checkbox" type="checkbox">
+                <input class="filter__checkbox" name="color-red" type="checkbox">
                 Красный
               </label>
               <label class="filter__label">
-                <input class="filter__checkbox" type="checkbox">
+                <input class="filter__checkbox" name="color-pink" type="checkbox">
                 Розовый
               </label>
             </fieldset>
@@ -107,15 +107,15 @@
             <fieldset>
               <legend>Bluetooth</legend>
               <label>
-                <input class="filter__radio-btn" type="radio" name="Bluetooth" value="BluetoothOn" checked="checked">
+                <input class="filter__radio-btn" type="radio" name="bluetooth" value="on" checked>
                 Да
               </label>
               <label>
-                <input class="filter__radio-btn" type="radio" name="Bluetooth" value="BluetoothOff">
+                <input class="filter__radio-btn" type="radio" name="bluetooth" value="off">
                 Нет
               </label>
             </fieldset>
-            <button class="primary-button">Показать</button>
+            <input class="primary-button" name="form-filter" type="submit" value="Показать">
           </form>
         </section>
         <div class="catalog__inner">
@@ -123,11 +123,12 @@
             <h3 class="title title--h3">сортировка:</h3>
             <form action="">
               <label>
-                <select name="sorting">
-                  <option value="popular" selected>Сначала популярные</option>
-                  <option value="cost-low">Сначала дешёвые</option>
-                  <option value="cost-high">Сначала дорогие</option>
-                </select>
+                <input class="sorting__input" name="sorting" type="text">
+                <ul class="sorting__list">
+                  <li id="popular">Сначала популярные</li>
+                  <li id="cost-low">Сначала дешёвые</li>
+                  <li id="cost-high">Сначала дорогие</li>
+                </ul>
               </label>
             </form>
             <div class="sorting__inner">
@@ -167,7 +168,7 @@
           </ul>
           <button class="secondary-button button-more">Загрузить еще</button>
           <section class="pagination">
-            <a href="#" class="pagination__link pagination__link--nav">Назад</a>
+            <a href="#" class="pagination__link pagination__link--prev">Назад</a>
             <div>
               <a href="#" class="pagination__link">1</a>
               <a href="#" class="pagination__link">2</a>
@@ -175,7 +176,7 @@
               <a href="#" class="pagination__link">...</a>
               <a href="#" class="pagination__link">15</a>
             </div>
-            <a href="#" class="pagination__link pagination__link--nav">Назад</a>
+            <a href="#" class="pagination__link pagination__link--next">Вперед</a>
           </section>
         </div>
       </div>
