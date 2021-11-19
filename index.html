@@ -68,7 +68,7 @@
               Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
               замаскированным под стандартную камеру.
             </p>
-            <button class="primary-button slide__button">Подробнее</button>
+            <button class="button slide__button">Подробнее</button>
             <table class="slide__table">
               <tr>
                 <th>800 м</th>
@@ -95,7 +95,7 @@
               Мотивирующие фитнес-браслеты помогут найти в себе силы
               не пропускать занятия и соблюдать диету.
             </p>
-            <button class="primary-button slide__button">Подробнее</button>
+            <button class="button slide__button">Подробнее</button>
             <table class="slide__table">
               <tr>
                 <th>48 часов</th>
@@ -120,7 +120,7 @@
               Самая длинная палка для селфи доступна в нашем магазине.
               Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
             </p>
-            <button class="primary-button slide__button">Подробнее</button>
+            <button class="button slide__button">Подробнее</button>
             <table class="slide__table">
               <tr>
                 <th>8,5 м</th>
@@ -179,9 +179,9 @@
 
       <section class="services">
         <div class="services__inner">
-          <button class="primary-button services__button">Доставка</button>
-          <button class="primary-button services__button">Гарантия</button>
-          <button class="primary-button services__button">Кредит</button>
+          <button class="button services__button">Доставка</button>
+          <button class="button services__button">Гарантия</button>
+          <button class="button services__button">Кредит</button>
         </div>
 
         <div class="service">
@@ -209,7 +209,7 @@
 
       <div class="delivery">
         <p class="delivery__description">Доставим редкий товар под заказ</p>
-        <button class="delivery__button"><span class="visually-hidden">Уточнее по доставке</span></button>
+        <div class="delivery__info"><span class="visually-hidden">Уточнее по доставке</span></div>
       </div>
 
       <section class="about">
@@ -226,7 +226,7 @@
             <li>СДИК</li>
             <li>ТоксБерри</li>
           </ul>
-          <button class="primary-button">Подробнее о нас</button>
+          <button class="button">Подробнее о нас</button>
         </div>
 
         <div class="about__inner">
@@ -250,7 +250,7 @@
             до
             <time>19:00</time>
           </p>
-          <button class="primary-button">Напишите нам</button>
+          <button class="button">Напишите нам</button>
         </div>
       </section>
 
@@ -269,7 +269,7 @@
           <label class="mailing__label" for="mailing">
             <input class="mailing__input" name="mailing" id="mailing" type="submit">
           </label>
-          <button class="primary-button mailing__button">
+          <button class="button mailing__button">
             Подписаться
           </button>
           <p class="mailing__description mailing__free">Это бесплатно</p>
@@ -307,7 +307,10 @@
             <img class="cart-popup__img-mini" src="" alt="Любительская селфи-палка">
             Любительская селфи-палка
           </a>
-          <button><span class="visually-hidden">убрать товар из корзины</span></button>
+          <button class="button-close cart-popup__close"><span
+              class="visually-hidden"
+          >убрать товар из корзины</span>
+          </button>
         </li>
         <li>
           <a class="cart-popup__link" href="#">
@@ -316,10 +319,13 @@
             >
             Профессиональная селфи-палка
           </a>
-          <button><span class="visually-hidden">убрать товар из корзины</span></button>
+          <button class="button-close cart-popup__close"><span
+              class="visually-hidden"
+          >убрать товар из корзины</span>
+          </button>
         </li>
       </ul>
-      <form class="cart-popup__form" method="get">
+      <form class="cart-popup__form" method="post">
         <label class="cart-popup__label" for="goods">
           Товаров:
           <input class="cart-popup__input" name="goods" id="goods" type="text" value="2">
@@ -329,14 +335,15 @@
           <input class="cart-popup__input" name="cart-cost" id="cart-cost" type="text" value="2000">
           ₽
         </label>
-        <input class="cart-popup__button" type="submit" value="Открыть корзину">
+        <button class="button cart-popup__button">Открыть корзину</button>
       </form>
     </section>
 
     <section class="delivery-popup">
       <h2 class="title title--h2 delivery-popup__title">Доставка под заказ</h2>
-      <button class="delivery-popup__close"><span class="visually-hidden">Закрыть окно заказа</span></button>
-      <form class="delivery-popup__form">
+      <button class="button-close delivery-popup__close"><span class="visually-hidden">Закрыть окно заказа</span>
+      </button>
+      <form class="delivery-popup__form" method="post">
         <label class="delivery-popup__label" for="name">
           Ваше имя:
           <input class="delivery-popup__input" name="name" id="name" type="text" placeholder="Имя Фамилия">

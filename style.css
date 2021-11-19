@@ -14,15 +14,11 @@
 
 }
 
-.primary-button {
+.button {
 
 }
 
-.secondary-button {
-
-}
-
-.button-more {
+.button-close {
 
 }
 
@@ -198,7 +194,7 @@
 
 }
 
-.delivery__button {
+.delivery__info {
 
 }
 
@@ -382,6 +378,10 @@
 
 }
 
+.card__button-download {
+
+}
+
 .pagination {
 
 }
@@ -406,10 +406,6 @@
 
 }
 
-.cart-popup__input {
-
-}
-
 .cart-popup__label {
 
 }
@@ -419,6 +415,10 @@
 }
 
 .cart-popup__button {
+
+}
+
+.cart-popup__close {
 
 }
 
