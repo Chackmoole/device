@@ -18,6 +18,10 @@
 
 }
 
+.button-close {
+
+}
+
 .visually-hidden {
 
 }
@@ -190,7 +194,7 @@
 
 }
 
-.delivery__button {
+.delivery__info {
 
 }
 
@@ -239,5 +243,237 @@
 }
 
 .mailing__free {
+
+}
+
+.catalog {
+
+}
+
+.catalog__wrapper {
+
+}
+
+.catalog__inner {
+
+}
+
+.heading {
+
+}
+
+.breadcrumbs {
+
+}
+
+.breadcrumbs__item {
+
+}
+
+.filter {
+
+}
+
+.filter__title {
+
+}
+
+.filter__subtitle {
+
+}
+
+.filter__slide {
+
+}
+
+.filter__scale {
+
+}
+
+.filter__scale--active {
+
+}
+
+.filter__btn {
+
+}
+
+.filter__btn--min {
+
+}
+
+.filter__btn--max {
+
+}
+
+.filter__input {
+
+}
+
+.filter__input--low {
+
+}
+
+.filter__input--high {
+
+}
+
+.filter__label {
+
+}
+
+.filter__checkbox {
+
+}
+
+.filter__radio-btn {
+
+}
+
+.sorting {
+
+}
+
+.sorting__inner {
+
+}
+
+.sorting__link {
+
+}
+
+.sorting__link--down {
+
+}
+
+.sorting__link--active {
+
+}
+
+.sorting__input {
+
+}
+
+.cards-list {
+
+}
+
+.card {
+
+}
+
+.card__img {
+
+}
+
+.card__description {
+
+}
+
+.card__cost {
+
+}
+
+.card__button {
+
+}
+
+.card__button-download {
+
+}
+
+.pagination {
+
+}
+
+.pagination__link {
+
+}
+
+.pagination__link--nav {
+
+}
+
+.cart-popup {
+
+}
+
+.cart-popup__list {
+
+}
+
+.cart-popup__form {
+
+}
+
+.cart-popup__label {
+
+}
+
+.cart-popup__input {
+
+}
+
+.cart-popup__button {
+
+}
+
+.cart-popup__close {
+
+}
+
+.delivery-popup {
+
+}
+
+.delivery-popup__title {
+
+}
+
+.delivery-popup__close {
+
+}
+
+.delivery-popup__inner {
+
+}
+
+.delivery-popup__form {
+
+}
+
+.delivery-popup__label {
+
+}
+
+.delivery-popup__input {
+
+}
+
+.delivery-popup__description {
+
+}
+
+.delivery-popup__description--error {
+
+}
+
+.delivery-popup__textarea {
+
+}
+
+.delivery-popup__info {
+
+}
+
+.delivery-popup__button {
+
+}
+
+.delivery-popup__button-increase {
+
+}
+
+.delivery-popup__button-decrease {
 
 }
