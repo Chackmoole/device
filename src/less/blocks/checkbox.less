@@ -1,0 +1,90 @@
+.checkbox {
+
+}
+
+.checkbox__label {
+  display: flex;
+  align-items: center;
+  color: @color-black;
+
+  &:hover {
+    color: fade(@color-black, 50%);
+  }
+
+  &:hover .checkbox__custom {
+    border-color: fade(@color-black, 50%);
+  }
+
+  &:hover .checkbox__custom path {
+    fill: fade(@color-black, 50%);
+  }
+
+  &:active {
+    color: fade(@color-black, 20%);
+  }
+
+  &:active .checkbox__custom {
+    border-color: fade(@color-black, 20%);
+  }
+
+  &:active .checkbox__custom path {
+    fill: fade(@color-black, 20%);
+  }
+}
+
+// custom checkbox
+.checkbox__custom {
+  position: relative;
+  display: block;
+  flex-shrink: 0;
+  height: 20px;
+  width: 20px;
+  border: 2px solid @color-black;
+  border-radius: 3px;
+  margin-right: 17px;
+}
+
+// svg mark
+.checkbox__mark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+// checked
+.checkbox__input:checked {
+  & + label .checkbox__mark {
+    display: block;
+  }
+}
+
+// focus-visible
+.checkbox__input:focus-visible {
+  & + label {
+    color: @color-purple;
+  }
+
+  & + label .checkbox__custom {
+    border-color: @color-purple;
+  }
+
+  & + label .checkbox__mark path {
+    fill: @color-purple;
+  }
+}
+
+.checkbox__input:disabled {
+  & + label {
+    color: fade(@color-black, 20%);
+  }
+
+  & + label .checkbox__custom {
+    border-color: fade(@color-black, 20%);
+  }
+
+  & + label .checkbox__mark path {
+    fill: fade(@color-black, 20%);
+  }
+}
