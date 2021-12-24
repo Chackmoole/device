@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Rubik:wght@400;700&display=swap"
         rel="stylesheet"
     >
     <link rel="stylesheet" href="css/style.min.css">
@@ -15,52 +15,56 @@
     <header class="header">
       <div class="layout">
         <div class="header__wrapper">
-          <a href="#" class="header__logo">
+          <a href="index.html" class="header__logo">
             <img class="header__img" src="" alt="Логотип магазина Device">
           </a>
           <div class="header__inner">
             <form class="search" action="" method="post">
               <label for="search">
-                <input class="search__input" name="search" id="search" type="text" placeholder="Поиск по сайту">
+                <input
+                    class="search__input text text--small" name="search" id="search" type="text"
+                    placeholder="Поиск по сайту"
+                >
               </label>
             </form>
             <div class="user-block">
-              <a href="#" class="user-block__link">Войти</a>
-              <a href="#" class="user-block__link user-block__link--disable">Выйти</a>
-              <a href="#" class="user-block__link">Сравнить</a>
-              <a href="#" class="user-block__link">Корзина</a>
+              <a href="#" class="text user-block__link">Войти</a>
+              <a href="#" class="text user-block__link user-block__link--disable">Выйти</a>
+              <a href="#" class="text user-block__link">Сравнить</a>
+              <a href="#" class="text user-block__link">Корзина</a>
             </div>
           </div>
 
           <nav class="nav">
             <div class="nav__list">
-              <a href="#" class="nav__link">Каталог товаров</a>
+              <a href="catalog.html" class="text text--button nav__link">Каталог товаров</a>
               <button class="nav__button"></button>
-              <a href="#" class="nav__link">Доставка</a>
-              <a href="#" class="nav__link">Гарантия</a>
-              <a href="#" class="nav__link">Контакты</a>
+              <a href="#" class="button nav__link">Доставка</a>
+              <a href="#" class="button nav__link">Гарантия</a>
+              <a href="#" class="button nav__link">Контакты</a>
             </div>
             <div class="nav__ext-list">
               <div class="nav__block">
-                <a href="#" class="nav__ext-link">Виртуальная реальность</a>
-                <a href="#" class="nav__ext-link">Моноподы для cелфи</a>
-                <a href="#" class="nav__ext-link">Экшн-камеры</a>
+                <a href="#" class="text nav__ext-link">Виртуальная реальность</a>
+                <a href="#" class="text nav__ext-link">Моноподы для cелфи</a>
+                <a href="#" class="text nav__ext-link">Экшн-камеры</a>
               </div>
               <div class="nav__block">
-                <a href="#" class="nav__ext-link">Фитнес-браслеты</a>
-                <a href="#" class="nav__ext-link">Умные часы</a>
+                <a href="#" class="text nav__ext-link">Фитнес-браслеты</a>
+                <a href="#" class="text nav__ext-link">Умные часы</a>
               </div>
               <div class="nav__block">
-                <a href="#" class="nav__ext-link">Квадрокоптеры</a>
+                <a href="#" class="text nav__ext-link">Квадрокоптеры</a>
               </div>
             </div>
           </nav>
         </div>
       </div>
     </header>
+
     <main class="catalog">
       <div class="heading">
-        <h2 class="title title--h2">Моноподы для селфи</h2>
+        <h2 class="text text--heading-main">Моноподы для селфи</h2>
         <ul class="breadcrumbs">
           <li class="breadcrumbs__item">Главная</li>
           <li class="breadcrumbs__item">Каталог товаров</li>
@@ -72,7 +76,7 @@
           <h3 class="filter__title">Фильтр:</h3>
           <form action="" method="get">
             <fieldset>
-              <legend class="filter__subtitle">Стоимость</legend>
+              <legend class="text text--heading-third filter__subtitle">Стоимость</legend>
               <div class="filter__slide">
                 <div class="filter__scale"></div>
                 <div class="filter__scale filter__scale--active"></div>
@@ -88,7 +92,7 @@
             </fieldset>
 
             <fieldset>
-              <legend class="filter__subtitle">Цвет</legend>
+              <legend class="text text--heading-third filter__subtitle">Цвет</legend>
               <label class="filter__label">
                 <input class="filter__checkbox" name="color-black" type="checkbox" checked>
                 Черный
@@ -112,7 +116,7 @@
             </fieldset>
 
             <fieldset>
-              <legend>Bluetooth</legend>
+              <legend class="text text--heading-third">Bluetooth</legend>
               <label>
                 <input class="filter__radio-btn" type="radio" name="bluetooth" value="on" checked>
                 Да
@@ -147,40 +151,40 @@
           <ul class="cards-list">
             <li class="card">
               <img class="card__img" src="" alt="Любительская селфи-палка">
-              <p class="card__description">Любительская селфи-палка</p>
+              <p class="text text--heading-third card__description">Любительская селфи-палка</p>
               <p class="card__cost">500 ₽</p>
               <button class="button card__button">Подробнее</button>
             </li>
             <li class="card">
               <img class="card__img" src="" alt="Профессиональная селфи-палка ">
-              <p class="card__description">Профессиональная селфи-палка </p>
+              <p class="text text--heading-third card__description">Профессиональная селфи-палка </p>
               <p class="card__cost">1 500 ₽</p>
               <button class="button card__button">Подробнее</button>
             </li>
             <li class="card">
               <img class="card__img" src="" alt="Непотопляемая селфи-палка">
-              <p class="card__description">Непотопляемая селфи-палка</p>
+              <p class="text text--heading-third card__description">Непотопляемая селфи-палка</p>
               <p class="card__cost">2 500 ₽</p>
               <button class="button card__button">Подробнее</button>
             </li>
             <li class="card">
               <img class="card__img" src="" alt="">
-              <p class="card__description">Селфи-палка «Следуй за мной»</p>
+              <p class="text text--heading-third card__description">Селфи-палка «Следуй за мной»</p>
               <p class="card__cost">4 900 ₽</p>
               <button class="button card__button">Подробнее</button>
             </li>
           </ul>
-          <button class="button card__button-download">Загрузить еще</button>
+          <button class="button button--outline card__button-download">Загрузить еще</button>
           <section class="pagination">
-            <a href="#" class="pagination__link pagination__link--prev">Назад</a>
+            <a href="#" class="button button--outline pagination__link pagination__link--prev">Назад</a>
             <div>
-              <a href="#" class="pagination__link">1</a>
-              <a href="#" class="pagination__link">2</a>
-              <a href="#" class="pagination__link">3</a>
-              <a href="#" class="pagination__link">...</a>
-              <a href="#" class="pagination__link">15</a>
+              <a href="#" class="button button--outline pagination__link">1</a>
+              <a href="#" class="button button--outline pagination__link">2</a>
+              <a href="#" class="button button--outline pagination__link">3</a>
+              <a href="#" class="button button--outline pagination__link">...</a>
+              <a href="#" class="button button--outline pagination__link">15</a>
             </div>
-            <a href="#" class="pagination__link pagination__link--next">Вперед</a>
+            <a href="#" class="button button--outline pagination__link pagination__link--next">Вперед</a>
           </section>
         </div>
       </div>
@@ -189,14 +193,14 @@
     <footer class="footer layout">
       <a href="#" class="footer__logo"><span class="visually-hidden">Девайс</span></a>
       <div class="footer__inner">
-        <p class="footer__description">Санкт-Петербург, набережная
+        <p class="text footer__description">Санкт-Петербург, набережная
           реки Карповки, 5, литера П.</p>
         <div class="footer__nav">
-          <a href="" class="footer__link">Доставка</a>
-          <a href="" class="footer__link">Гарантия</a>
-          <a href="" class="footer__link">Контакты</a>
+          <a href="#" class="button footer__link">Доставка</a>
+          <a href="#" class="button footer__link">Гарантия</a>
+          <a href="#" class="button footer__link">Контакты</a>
         </div>
-        <a class="footer__tel" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+        <a class="text footer__tel" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
       </div>
 
       <div class="footer__inner">
