@@ -74,8 +74,8 @@
       <div class="catalog__wrapper">
         <section class="filter">
           <h3 class="filter__title">Фильтр:</h3>
-          <form action="" method="get">
-            <fieldset>
+          <form class="filter__wrapper" action="" method="get">
+            <fieldset class="filter__inner">
               <legend class="text text--heading-third filter__subtitle">Стоимость</legend>
               <div class="filter__slide">
                 <div class="filter__scale"></div>
@@ -91,39 +91,92 @@
               </label>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="filter__inner">
               <legend class="text text--heading-third filter__subtitle">Цвет</legend>
-              <label class="filter__label">
-                <input class="filter__checkbox" name="color-black" type="checkbox" checked>
-                Черный
+
+              <label class="checkbox">
+                <input
+                    class="checkbox__input visually-hidden" name="color-black" type="checkbox" checked
+                >
+                <span class="checkbox__custom">
+                    <svg
+                        class="checkbox__mark" width="10" height="10" viewBox="0 0 10 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                    <path d="M10 0L3.1 6.6L0 3.6V6.9L3.2 10L10 3.3V0Z" fill="black"/>
+                    </svg>
+                  </span>
+                <span class="checkbox__text">Черный</span>
               </label>
-              <label class="filter__label">
-                <input class="filter__checkbox" name="color-white" type="checkbox" checked>
-                Белый
+              <label class="checkbox">
+                <input
+                    class="checkbox__input visually-hidden" name="color-white" type="checkbox" checked
+                >
+                <span class="checkbox__custom">
+                    <svg
+                        class="checkbox__mark" width="10" height="10" viewBox="0 0 10 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                    <path d="M10 0L3.1 6.6L0 3.6V6.9L3.2 10L10 3.3V0Z" fill="black"/>
+                    </svg>
+                  </span>
+                <span class="checkbox__text">Белый</span>
               </label>
-              <label class="filter__label">
-                <input class="filter__checkbox" name="color-blue" type="checkbox">
-                Синий
+              <label class="checkbox">
+                <input
+                    class="checkbox__input visually-hidden" name="color-blue" type="checkbox"
+                >
+                <span class="checkbox__custom">
+                    <svg
+                        class="checkbox__mark" width="10" height="10" viewBox="0 0 10 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                    <path d="M10 0L3.1 6.6L0 3.6V6.9L3.2 10L10 3.3V0Z" fill="black"/>
+                    </svg>
+                  </span>
+                <span class="checkbox__text">Синий</span>
               </label>
-              <label class="filter__label">
-                <input class="filter__checkbox" name="color-red" type="checkbox">
-                Красный
+              <label class="checkbox">
+                <input
+                    class="checkbox__input visually-hidden" name="color-red" type="checkbox"
+                >
+                <span class="checkbox__custom">
+                    <svg
+                        class="checkbox__mark" width="10" height="10" viewBox="0 0 10 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                    <path d="M10 0L3.1 6.6L0 3.6V6.9L3.2 10L10 3.3V0Z" fill="black"/>
+                    </svg>
+                  </span>
+                <span class="checkbox__text">Красный</span>
               </label>
-              <label class="filter__label">
-                <input class="filter__checkbox" name="color-pink" type="checkbox">
-                Розовый
+              <label class="checkbox">
+                <input
+                    class="checkbox__input visually-hidden" name="color-pink" type="checkbox" disabled
+                >
+                <span class="checkbox__custom">
+                    <svg
+                        class="checkbox__mark" width="10" height="10" viewBox="0 0 10 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                    <path d="M10 0L3.1 6.6L0 3.6V6.9L3.2 10L10 3.3V0Z" fill="black"/>
+                    </svg>
+                  </span>
+                <span class="checkbox__text">Розовый</span>
               </label>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="filter__inner">
               <legend class="text text--heading-third">Bluetooth</legend>
-              <label>
-                <input class="filter__radio-btn" type="radio" name="bluetooth" value="on" checked>
-                Да
+              <label class="radio">
+                <input class="radio__input visually-hidden" type="radio" name="bluetooth" value="on" checked>
+                <span class="radio__custom"></span>
+                <span class="radio__text">Да</span>
               </label>
-              <label>
-                <input class="filter__radio-btn" type="radio" name="bluetooth" value="off">
-                Нет
+              <label class="radio">
+                <input class="radio__input visually-hidden" type="radio" name="bluetooth" value="off" disabled>
+                <span class="radio__custom"></span>
+                <span class="radio__text">Нет</span>
               </label>
             </fieldset>
             <button class="button">Показать</button>
