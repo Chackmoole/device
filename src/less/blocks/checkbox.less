@@ -1,8 +1,4 @@
 .checkbox {
-
-}
-
-.checkbox__label {
   display: flex;
   align-items: center;
   color: @color-black;
@@ -55,36 +51,37 @@
 
 // checked
 .checkbox__input:checked {
-  & + label .checkbox__mark {
+  & + .checkbox__custom .checkbox__mark {
     display: block;
   }
 }
 
 // focus-visible
 .checkbox__input:focus-visible {
-  & + label {
+  & ~ .checkbox__text {
     color: @color-purple;
   }
 
-  & + label .checkbox__custom {
+  & + .checkbox__custom {
     border-color: @color-purple;
   }
 
-  & + label .checkbox__mark path {
+  & + .checkbox__custom .checkbox__mark path {
     fill: @color-purple;
   }
 }
 
+//disabled
 .checkbox__input:disabled {
-  & + label {
+  & ~ .checkbox__text {
     color: fade(@color-black, 20%);
   }
 
-  & + label .checkbox__custom {
+  & + .checkbox__custom {
     border-color: fade(@color-black, 20%);
   }
 
-  & + label .checkbox__mark path {
+  & + .checkbox__custom .checkbox__mark path {
     fill: fade(@color-black, 20%);
   }
 }
