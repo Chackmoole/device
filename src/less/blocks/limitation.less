@@ -1,0 +1,97 @@
+.limitation {
+  font-size: 15px;
+  position: relative;
+}
+
+.limitation__subtitle {
+  padding-bottom: 50px;
+  .subtitle();
+}
+
+.limitation__inner {
+  display: flex;
+  width: 200px;
+}
+
+.limitation__btn {
+  position: absolute;
+  top: -27px;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  border: 2px solid @color-black;
+  background-color: @color-gray-light;
+  padding: 0;
+  z-index: 3;
+
+  &:focus-visible {
+    outline: none;
+    border-color: @color-purple;
+
+    & + .limitation__label {
+      color: fade(@color-purple, 30%);
+    }
+
+    & + .limitation__label .limitation__input {
+      color: fade(@color-purple, 30%);
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: @color-black;
+
+    & + .limitation__label {
+      color: @color-black;
+    }
+
+    & + .limitation__label .limitation__input {
+      color: @color-black;
+    }
+  }
+
+  &--min {
+    left: 0;
+
+    & + .limitation__label {
+      margin-right: 8px;
+    }
+  }
+
+  &--max {
+    right: 50px;
+  }
+}
+
+.limitation__scale {
+  position: absolute;
+  top: -18px;
+  height: 2px;
+  width: 200px;
+  background-color: @color-gray;
+  z-index: 1;
+
+  &--active {
+    background-color: @color-black;
+    z-index: 2;
+    width: 150px;
+  }
+}
+
+.limitation__label {
+  height: 18px;
+  width: 100px;
+  color: fade(@color-black, 30%);
+}
+
+.limitation__input {
+  height: 18px;
+  width: 70px;
+  border: none;
+  color: fade(@color-black, 30%);
+  padding-left: 4px;
+  padding-right: 4px;
+}
