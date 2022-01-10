@@ -75,24 +75,32 @@
         <section class="filter">
           <h3 class="filter__title">Фильтр:</h3>
           <form class="filter__wrapper" action="" method="get">
-            <fieldset class="limitation filter__inner">
-              <legend class="text text--heading-third limitation__subtitle">Стоимость</legend>
-              <span class="limitation__scale"></span>
-              <span class="limitation__scale limitation__scale--active"></span>
-              <button class="limitation__btn limitation__btn--min"></button>
-              <label class="limitation__label">От
-                <input class="limitation__input limitation__input--low" name="cost-min" type="text" value="0">
-              </label>
-              <button class="limitation__btn limitation__btn--max"></button>
-              <label class="limitation__label">До
-                <input
-                    class="limitation__input limitation__input--high" name="cost-high" type="text" value="5000"
-                >
-              </label>
+            <fieldset class="filter__inner">
+              <legend class="filter__subtitle">Стоимость</legend>
+              <div class="limitation">
+                <div class="limitation__inner">
+                  <span class="limitation__scale"></span>
+                  <span class="limitation__scale limitation__scale--active"></span>
+                  <button class="limitation__btn limitation__btn--min" type="button"></button>
+                  <button class="limitation__btn limitation__btn--max" type="button"></button>
+                </div>
+                <div class="limitation__inner">
+                  <label class="limitation__label">
+                    <input class="limitation__input" name="cost-min" type="text" value="0">
+                    <span>От</span>
+                  </label>
+                  <label class="limitation__label">
+                    <input
+                        class="limitation__input" name="cost-high" type="text" value="5000"
+                    >
+                    <span>До</span>
+                  </label>
+                </div>
+              </div>
             </fieldset>
 
             <fieldset class="filter__inner">
-              <legend class="text text--heading-third filter__subtitle">Цвет</legend>
+              <legend class="filter__subtitle">Цвет</legend>
 
               <label class="checkbox">
                 <input
@@ -167,7 +175,7 @@
             </fieldset>
 
             <fieldset class="filter__inner">
-              <legend class="text text--heading-third">Bluetooth</legend>
+              <legend class="filter__subtitle">Bluetooth</legend>
               <label class="radio">
                 <input class="radio__input visually-hidden" type="radio" name="bluetooth" value="on" checked>
                 <span class="radio__custom"></span>

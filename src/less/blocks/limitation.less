@@ -1,21 +1,21 @@
 .limitation {
   font-size: 15px;
-  position: relative;
-}
-
-.limitation__subtitle {
-  padding-bottom: 50px;
-  .subtitle();
+  line-height: 18px;
 }
 
 .limitation__inner {
+  position: relative;
   display: flex;
   width: 200px;
+  min-height: 18px;
+
+  &:first-child {
+    margin-bottom: 8px;
+  }
 }
 
 .limitation__btn {
   position: absolute;
-  top: -27px;
   height: 18px;
   width: 18px;
   border-radius: 50%;
@@ -28,13 +28,13 @@
     outline: none;
     border-color: @color-purple;
 
-    & + .limitation__label {
-      color: fade(@color-purple, 30%);
-    }
+    //& + .limitation__label {
+    //  color: fade(@color-purple, 30%);
+    //}
 
-    & + .limitation__label .limitation__input {
-      color: fade(@color-purple, 30%);
-    }
+    //& + .limitation__label .limitation__input {
+    //  color: fade(@color-purple, 30%);
+    //}
   }
 
   &:hover {
@@ -44,13 +44,13 @@
   &:active {
     background-color: @color-black;
 
-    & + .limitation__label {
-      color: @color-black;
-    }
-
-    & + .limitation__label .limitation__input {
-      color: @color-black;
-    }
+    //& + .limitation__label {
+    //  color: @color-black;
+    //}
+    //
+    //& + .limitation__label .limitation__input {
+    //  color: @color-black;
+    //}
   }
 
   &--min {
@@ -68,7 +68,7 @@
 
 .limitation__scale {
   position: absolute;
-  top: -18px;
+  top: calc(50% - 1px);
   height: 2px;
   width: 200px;
   background-color: @color-gray;
@@ -82,16 +82,38 @@
 }
 
 .limitation__label {
-  height: 18px;
-  width: 100px;
-  color: fade(@color-black, 30%);
+  display: flex;
+  width: 50%;
+  color: fade(@color-black, 60%);
+  background-color: @color-gray-light;
 }
 
 .limitation__input {
+  order: 2;
   height: 18px;
   width: 70px;
   border: none;
-  color: fade(@color-black, 30%);
+  color: fade(@color-black, 60%);
   padding-left: 4px;
   padding-right: 4px;
+  outline: none;
+  background-color: @color-gray-light;
+
+  & + span {
+    padding-right: 4px;
+  }
+
+  &:focus-visible {
+    border: 2px solid @color-purple;
+  }
+
+  &:hover {
+    background-color: @color-gray-silver;
+  }
+
+  &:focus {
+    border-color: @color-black;
+    background-color: @color-white;
+    color: @color-black;
+  }
 }
