@@ -74,9 +74,9 @@
       <div class="catalog__wrapper">
         <section class="filter">
           <h3 class="filter__title">Фильтр:</h3>
-          <form class="filter__wrapper" action="" method="get">
-            <fieldset class="filter__inner">
-              <legend class="filter__subtitle">Стоимость</legend>
+          <form action="" method="get">
+            <div class="filter__block">
+              <h4 class="filter__subtitle">Стоимость</h4>
               <div class="limitation">
                 <div class="limitation__inner">
                   <span class="limitation__scale"></span>
@@ -85,22 +85,20 @@
                   <button class="limitation__btn limitation__btn--max" type="button"></button>
                 </div>
                 <div class="limitation__inner">
-                  <label class="limitation__label">
+                  <label class="limitation__label">От
                     <input class="limitation__input" name="cost-min" type="text" value="0">
-                    <span>От</span>
                   </label>
-                  <label class="limitation__label">
+                  <label class="limitation__label">До
                     <input
                         class="limitation__input" name="cost-high" type="text" value="5000"
                     >
-                    <span>До</span>
                   </label>
                 </div>
               </div>
-            </fieldset>
+            </div>
 
-            <fieldset class="filter__inner">
-              <legend class="filter__subtitle">Цвет</legend>
+            <div class="filter__block">
+              <h4 class="filter__subtitle">Цвет</h4>
 
               <label class="checkbox">
                 <input
@@ -172,10 +170,10 @@
                   </span>
                 <span class="checkbox__text">Розовый</span>
               </label>
-            </fieldset>
+            </div>
 
-            <fieldset class="filter__inner">
-              <legend class="filter__subtitle">Bluetooth</legend>
+            <div class="filter__block">
+              <h4 class="filter__subtitle">Bluetooth</h4>
               <label class="radio">
                 <input class="radio__input visually-hidden" type="radio" name="bluetooth" value="on" checked>
                 <span class="radio__custom"></span>
@@ -186,7 +184,7 @@
                 <span class="radio__custom"></span>
                 <span class="radio__text">Нет</span>
               </label>
-            </fieldset>
+            </div>
             <button class="button">Показать</button>
           </form>
         </section>

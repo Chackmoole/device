@@ -3,24 +3,18 @@
   background-color: @color-gray-light;
 }
 
-.filter__inner {
-  padding: 0;
+.filter__block {
+  padding-top: 12px;
+  padding-bottom: 44px;
+  border-top: 2px solid @color-black;
+  width: 200px;
+}
+
+.filter__title {
   margin: 0;
-  margin-bottom: 44px;
-  border: none;
 }
 
 .filter__subtitle {
-  position: relative;
   .subtitle();
   margin-bottom: 28px;
-  padding-top: 12px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    border-top: 2px solid @color-black;
-    width: 200px;
-    top: 0;
-  }
 }

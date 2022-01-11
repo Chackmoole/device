@@ -22,47 +22,27 @@
   border: 2px solid @color-black;
   background-color: @color-gray-light;
   padding: 0;
+  cursor: pointer;
   z-index: 3;
+  left: 0;
 
   &:focus-visible {
-    outline: none;
-    border-color: @color-purple;
-
-    //& + .limitation__label {
-    //  color: fade(@color-purple, 30%);
-    //}
-
-    //& + .limitation__label .limitation__input {
-    //  color: fade(@color-purple, 30%);
-    //}
+    outline-color: @color-purple;
+    outline-offset: 3px;
   }
 
   &:hover {
-    cursor: pointer;
+    background-color: @color-gray-silver;
+    border-color: @color-gray-dark;
   }
 
   &:active {
     background-color: @color-black;
-
-    //& + .limitation__label {
-    //  color: @color-black;
-    //}
-    //
-    //& + .limitation__label .limitation__input {
-    //  color: @color-black;
-    //}
-  }
-
-  &--min {
-    left: 0;
-
-    & + .limitation__label {
-      margin-right: 8px;
-    }
+    border-color: @color-black;
   }
 
   &--max {
-    right: 50px;
+    left: 135px;
   }
 }
 
@@ -70,7 +50,7 @@
   position: absolute;
   top: calc(50% - 1px);
   height: 2px;
-  width: 200px;
+  width: 100%;
   background-color: @color-gray;
   z-index: 1;
 
@@ -89,7 +69,6 @@
 }
 
 .limitation__input {
-  order: 2;
   height: 18px;
   width: 70px;
   border: none;
@@ -98,22 +77,10 @@
   padding-right: 4px;
   outline: none;
   background-color: @color-gray-light;
-
-  & + span {
-    padding-right: 4px;
-  }
+  margin-left: 4px;
 
   &:focus-visible {
     border: 2px solid @color-purple;
-  }
-
-  &:hover {
-    background-color: @color-gray-silver;
-  }
-
-  &:focus {
-    border-color: @color-black;
-    background-color: @color-white;
-    color: @color-black;
+    border-radius: 3px;
   }
 }
