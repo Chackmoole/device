@@ -1,5 +1,6 @@
 .card {
   width: 360px;
+  position: relative;
 
   &:hover {
     & .card__img {
@@ -32,18 +33,16 @@
 .card__inner {
   display: flex;
   align-items: start;
+  padding-bottom: 4px;
 }
 
 .card__description {
   width: 70%;
-  display: block;
   margin: 0;
-  padding-bottom: 1px;
 }
 
 .card__cost {
   width: 30%;
-  display: block;
   margin: 0;
   text-align: right;
 }
