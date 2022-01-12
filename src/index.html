@@ -38,7 +38,7 @@
           <nav class="nav">
             <div class="nav__list">
               <a href="catalog.html" class="text text--button nav__link">Каталог товаров</a>
-              <button class="nav__button"></button>
+              <button class="nav__button" type="button"></button>
               <a href="#" class="button nav__link">Доставка</a>
               <a href="#" class="button nav__link">Гарантия</a>
               <a href="#" class="button nav__link">Контакты</a>
@@ -78,7 +78,7 @@
               Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
               замаскированным под стандартную камеру.
             </p>
-            <button class="button slide__button">
+            <button class="button slide__button" type="button">
               Подробнее
             </button>
             <table class="slide__table">
@@ -107,7 +107,7 @@
               Мотивирующие фитнес-браслеты помогут найти в себе силы
               не пропускать занятия и соблюдать диету.
             </p>
-            <button class="button slide__button">Подробнее</button>
+            <button class="button slide__button" type="button">Подробнее</button>
             <table class="slide__table">
               <tr>
                 <th class="text slide__table-th">48 часов</th>
@@ -132,7 +132,7 @@
               Самая длинная палка для селфи доступна в нашем магазине.
               Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
             </p>
-            <button class="button slide__button">Подробнее</button>
+            <button class="button slide__button" type="button">Подробнее</button>
             <table class="slide__table">
               <tr>
                 <th class="text slide__table-th">8,5 м</th>
@@ -148,15 +148,19 @@
           </div>
         </div>
 
-        <button class="slider__button slider__button--prev"><span class="visually-hidden">Предыдущй слайд</span>
+        <button class="slider__button slider__button--prev" type="button"><span
+            class="visually-hidden"
+        >Предыдущй слайд</span>
         </button>
-        <button class="slider__button slider__button--next"><span class="visually-hidden">Следующий слайд</span>
+        <button class="slider__button slider__button--next" type="button"><span
+            class="visually-hidden"
+        >Следующий слайд</span>
         </button>
 
         <div class="slider__switch">
-          <button class="slider__radio-button"><span class="visually-hidden">Первый слайд</span></button>
-          <button class="slider__radio-button"><span class="visually-hidden">Второй слайд</span></button>
-          <button class="slider__radio-button"><span class="visually-hidden">Третий слайд</span></button>
+          <button class="slider__radio-button" type="button"><span class="visually-hidden">Первый слайд</span></button>
+          <button class="slider__radio-button" type="button"><span class="visually-hidden">Второй слайд</span></button>
+          <button class="slider__radio-button" type="button"><span class="visually-hidden">Третий слайд</span></button>
         </div>
       </section>
 
@@ -193,9 +197,9 @@
 
       <section class="services">
         <div class="services__inner">
-          <button class="button services__button">Доставка</button>
-          <button class="button services__button">Гарантия</button>
-          <button class="button services__button">Кредит</button>
+          <button class="button services__button" type="button">Доставка</button>
+          <button class="button services__button" type="button">Гарантия</button>
+          <button class="button services__button" type="button">Кредит</button>
         </div>
 
         <div class="service">
@@ -240,7 +244,7 @@
             <li class="text about__item">СДИК</li>
             <li class="text about__item">ТоксБерри</li>
           </ul>
-          <button class="button">Подробнее о нас</button>
+          <button class="button" type="button">Подробнее о нас</button>
         </div>
 
         <div class="about__inner">
@@ -264,7 +268,7 @@
             до
             <time>19:00</time>
           </p>
-          <button class="button">Напишите нам</button>
+          <button class="button" type="button">Напишите нам</button>
         </div>
       </section>
 
@@ -283,7 +287,7 @@
           <label class="mailing__label" for="mailing">
             <input class="text mailing__input" name="mailing" id="mailing" type="text" placeholder="Ваш e-mail">
           </label>
-          <button class="button button--outline mailing__button">
+          <button class="button button--outline mailing__button" type="button">
             Подписаться
           </button>
           <p class="text mailing__description">Это бесплатно</p>
@@ -321,7 +325,7 @@
             <img class="cart-popup__img-mini" src="" alt="Любительская селфи-палка">
             Любительская селфи-палка
           </a>
-          <button class="button-close cart-popup__close"><span
+          <button class="button-close cart-popup__close" type="button"><span
               class="visually-hidden"
           >убрать товар из корзины</span>
           </button>
@@ -333,7 +337,7 @@
             >
             Профессиональная селфи-палка
           </a>
-          <button class="button-close cart-popup__close"><span
+          <button class="button-close cart-popup__close" type="button"><span
               class="visually-hidden"
           >убрать товар из корзины</span>
           </button>
@@ -349,13 +353,15 @@
           <input class="text cart-popup__input" name="cart-cost" id="cart-cost" type="text" value="2000">
           ₽
         </label>
-        <button class="button cart-popup__button">Открыть корзину</button>
+        <button class="button cart-popup__button" type="button">Открыть корзину</button>
       </form>
     </section>
 
     <section class="delivery-popup">
       <h2 class="text text--heading-main delivery-popup__title">Доставка под заказ</h2>
-      <button class="button-close delivery-popup__close"><span class="visually-hidden">Закрыть окно заказа</span>
+      <button class="button-close delivery-popup__close" type="button"><span
+          class="visually-hidden"
+      >Закрыть окно заказа</span>
       </button>
       <form class="delivery-popup__form" method="post">
         <label class="text text--heading-third delivery-popup__label" for="name">
@@ -379,11 +385,11 @@
         <label class="text text--heading-third delivery-popup__label" for="counter">
           Количество:
           <span class="delivery-popup__info"></span>
-          <button class="delivery-popup__button delivery-popup__button-increase">
+          <button class="delivery-popup__button delivery-popup__button-increase" type="button">
             <span class="visually-hidden">уменьшить количество товаров</span>
           </button>
           <input class="delivery-popup__counter" name="counter" id="counter" type="text" value="1">
-          <button class="delivery-popup__button delivery-popup__button-decrease">
+          <button class="delivery-popup__button delivery-popup__button-decrease" type="button">
             <span class="visually-hidden">увеличить количество товаров</span>
           </button>
         </label>

@@ -38,7 +38,7 @@
           <nav class="nav">
             <div class="nav__list">
               <a href="catalog.html" class="text text--button nav__link">Каталог товаров</a>
-              <button class="nav__button"></button>
+              <button class="nav__button" type="button"></button>
               <a href="#" class="button nav__link">Доставка</a>
               <a href="#" class="button nav__link">Гарантия</a>
               <a href="#" class="button nav__link">Контакты</a>
@@ -185,7 +185,7 @@
                 <span class="radio__text">Нет</span>
               </label>
             </div>
-            <button class="button filter__button">Показать</button>
+            <button class="button filter__button" type="button">Показать</button>
           </form>
         </section>
         <div class="catalog__inner">
@@ -207,33 +207,62 @@
               </a>
             </div>
           </form>
+
           <ul class="cards-list">
             <li class="card">
-              <img class="card__img" src="" alt="Любительская селфи-палка">
-              <p class="text text--heading-third card__description">Любительская селфи-палка</p>
-              <p class="card__cost">500 ₽</p>
-              <button class="button card__button">Подробнее</button>
+              <a class="card__link" href="#">
+                <img
+                    class="card__img" src="./img/product-1.png" width="360"
+                    height="380" alt="Любительская селфи-палка"
+                >
+                <div class="card__inner">
+                  <p class="text text--heading-third card__description">Любительская селфи-палка</p>
+                  <p class="card__cost">500 ₽</p>
+                </div>
+              </a>
+              <button class="button card__button" type="button">Подробнее</button>
             </li>
             <li class="card">
-              <img class="card__img" src="" alt="Профессиональная селфи-палка ">
-              <p class="text text--heading-third card__description">Профессиональная селфи-палка </p>
-              <p class="card__cost">1 500 ₽</p>
-              <button class="button card__button">Подробнее</button>
+              <a class="card__link" href="#">
+                <img
+                    class="card__img" src="./img/product-2.png" width="360"
+                    height="380" alt="Профессиональная селфи-палка "
+                >
+                <div class="card__inner">
+                  <p class="text text--heading-third card__description">Профессиональная селфи-палка </p>
+                  <p class="card__cost">1 500 ₽</p>
+                </div>
+              </a>
+              <button class="button card__button" type="button">Подробнее</button>
             </li>
             <li class="card">
-              <img class="card__img" src="" alt="Непотопляемая селфи-палка">
-              <p class="text text--heading-third card__description">Непотопляемая селфи-палка</p>
-              <p class="card__cost">2 500 ₽</p>
-              <button class="button card__button">Подробнее</button>
+              <a class="card__link" href="#">
+                <img
+                    class="card__img" src="./img/product-3.png" width="360"
+                    height="380" alt="Непотопляемая селфи-палка"
+                >
+                <div class="card__inner">
+                  <p class="text text--heading-third card__description">Непотопляемая селфи-палка</p>
+                  <p class="card__cost">2 500 ₽</p>
+                </div>
+              </a>
+              <button class="button card__button" type="button">Подробнее</button>
             </li>
             <li class="card">
-              <img class="card__img" src="" alt="">
-              <p class="text text--heading-third card__description">Селфи-палка «Следуй за мной»</p>
-              <p class="card__cost">4 900 ₽</p>
-              <button class="button card__button">Подробнее</button>
+              <a class="card__link" href="#">
+                <img
+                    class="card__img" src="./img/product-4.png" width="360"
+                    height="380" alt="Селфи-палка «Следуй за мной»"
+                >
+                <div class="card__inner">
+                  <p class="text text--heading-third card__description">Селфи-палка «Следуй за мной»</p>
+                  <p class="card__cost">4 900 ₽</p>
+                </div>
+              </a>
+              <button class="button card__button" type="button">Подробнее</button>
             </li>
           </ul>
-          <button class="button button--outline card__button-download">Загрузить еще</button>
+          <button class="button button--outline card__button-download" type="button">Загрузить еще</button>
           <section class="pagination">
             <a href="#" class="button button--outline pagination__link pagination__link--prev">Назад</a>
             <div>

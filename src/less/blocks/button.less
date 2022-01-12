@@ -1,10 +1,12 @@
 .button {
+  .button-text();
   position: relative;
   padding: 10px 20px;
   border: none;
   z-index: 0;
   background-color: transparent;
-  .button-text();
+  cursor: pointer;
+
 
   &::after {
     position: absolute;
@@ -29,6 +31,12 @@
   }
 
   &:active {
+    background-color: @color-yellow-dark;
+  }
+
+  &:active::after {
+    top: 0;
+    height: 100%;
     background-color: @color-yellow-dark;
   }
 }
