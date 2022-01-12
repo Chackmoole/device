@@ -1,12 +1,32 @@
-//изменить размер текста в заголовке карточки и кнопок. Так же уточнить цвета в пагинации.
 .card {
   width: 360px;
+
+  &:hover {
+    & .card__img {
+      opacity: 0.5;
+    }
+
+    & .card__button {
+      display: block;
+    }
+  }
+}
+
+.card__link {
+  text-decoration: none;
+  color: @color-black;
+
+  &:focus {
+    outline-color: @color-purple;
+    outline-offset: 2px;
+  }
 }
 
 .card__img {
+  display: block;
   width: 360px;
   height: 380px;
-  margin-bottom: 32px;
+  padding-bottom: 32px;
 }
 
 .card__inner {
@@ -16,13 +36,22 @@
 
 .card__description {
   width: 70%;
-  display: inline-block;
+  display: block;
   margin: 0;
+  padding-bottom: 1px;
 }
 
 .card__cost {
   width: 30%;
-  display: inline-block;
+  display: block;
   margin: 0;
   text-align: right;
+}
+
+.card__button {
+  display: none;
+  position: absolute;
+  top: 170px;
+  left: 50%;
+  transform: translateX(-50%);
 }
