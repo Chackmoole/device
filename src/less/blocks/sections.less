@@ -1,5 +1,7 @@
 .sections {
-
+  display: flex;
+  gap: 40px;
+  margin-bottom: 70px;
 }
 
 .sections__descriptions {
@@ -8,4 +10,30 @@
   font-size: 18px;
   line-height: 24px;
   letter-spacing: -0.02em;
+  margin-bottom: 12px;
 }
+
+.sections__link {
+  text-decoration: none;
+
+  &:hover .section__image {
+    background-color: @color-yellow-dark;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline-color: @color-purple;
+    outline-offset: 2px;
+  }
+}
+
+.section__image {
+  width: 160px;
+  height: 160px;
+  background-color: @color-yellow;
+  margin-bottom: 32px;
+}
+
