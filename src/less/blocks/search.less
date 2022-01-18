@@ -1,10 +1,13 @@
 .search {
   position: relative;
+  display: flex;
   width: 359px;
   height: 40px;
 
   & label {
     display: block;
+    position: relative;
+    width: 100%;
 
     &::before {
       position: absolute;
@@ -34,6 +37,33 @@
   }
 
   &:focus-visible {
+    outline-color: @color-purple;
+    outline-offset: 3px;
+  }
+}
+
+.search__button {
+  .text--small();
+  position: absolute;
+  left: 357px;
+  width: 160px;
+  height: 40px;
+  border: 2px solid @color-black;
+  border-radius: 0 50px 50px 0;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 8px;
+
+  &:hover {
+    background-color: @color-black;
+    color: @color-white;
+  }
+
+  &:active {
+    color: fade(@color-white, 30%);
+  }
+
+  &:focus {
     outline-color: @color-purple;
     outline-offset: 3px;
   }
