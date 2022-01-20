@@ -1,5 +1,55 @@
-.nav__ext-link {
-  font-size: 16px;
-  line-height: 18px;
+.nav__list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  min-height: 50px;
+  align-items: center;
 }
 
+.nav__links {
+  display: flex;
+  gap: 44px;
+}
+
+.nav__link {
+  .button-text();
+  .state();
+}
+
+.nav__button {
+  .button-text();
+  position: relative;
+  border: none;
+  background-color: transparent;
+  line-height: 50px;
+  padding: 0 58px 0 0;
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    content: "";
+    height: 50px;
+    width: 50px;
+    background-image: url("../../img/button-icon-plus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.3;
+  }
+
+  &--open {
+    &::after {
+      background-image: url("../../img/button-icon-minus.svg");
+    }
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+
+  &:focus {
+    outline-color: @color-purple;
+    outline-offset: 2px;
+  }
+}
