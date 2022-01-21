@@ -1,12 +1,7 @@
 .nav {
   position: relative;
-}
-
-.nav__list {
-  width: 100%;
   display: flex;
   justify-content: space-between;
-  min-height: 50px;
   align-items: center;
 }
 
@@ -18,12 +13,17 @@
 .nav__link {
   .button-text();
   .state();
+  position: relative;
 
-  //&--active::after {
-  //  content: "";
-  //  background: @color-black;
-  //
-  //}
+  &--active::after {
+    position: absolute;
+    content: "";
+    background: @color-black;
+    height: 2px;
+    width: 98%;
+    bottom: -3px;
+    left: 0;
+  }
 }
 
 .nav__button {
