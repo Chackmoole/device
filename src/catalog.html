@@ -12,56 +12,59 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <header class="header">
-      <div class="layout">
-        <div class="header__wrapper">
-          <a href="index.html" class="header__logo">
-            <img class="header__img" src="" alt="Логотип магазина Device">
-          </a>
-          <div class="header__inner">
-            <form class="search" action="" method="post">
-              <label for="search">
-                <input
-                    class="search__input text text--small" name="search" id="search" type="text"
-                    placeholder="Поиск по сайту"
-                >
-              </label>
-            </form>
-            <div class="user-block">
-              <a href="#" class="text user-block__link">Войти</a>
-              <a href="#" class="text user-block__link user-block__link--disable">Выйти</a>
-              <a href="#" class="text user-block__link">Сравнить</a>
-              <a href="#" class="text user-block__link">Корзина</a>
-            </div>
+    <header class="header layout header__wrapper">
+      <a class="logo-header" href="index.html">
+        <img src="img/logo-header.svg" alt="логотоп Девайс">
+      </a>
+      <div class="header__block">
+        <form class="search" action="" method="post">
+          <label class="search__label" for="search">
+            <input
+                class="search__input text" name="search" id="search" type="text"
+                placeholder="Поиск по сайту"
+            >
+          </label>
+          <button class="search__button">Найти</button>
+        </form>
+        <div class="user-block">
+          <div class="user-block__login-block ">
+            <a href="#" class="text user-block__link">Коля Петухов</a>
+            <a href="#" class="text user-block__link user-block__link--logout">Выйти</a>
           </div>
 
-          <nav class="nav">
-            <div class="nav__list">
-              <a href="catalog.html" class="text text--button nav__link">Каталог товаров</a>
-              <button class="nav__button" type="button"></button>
-              <a href="#" class="button nav__link">Доставка</a>
-              <a href="#" class="button nav__link">Гарантия</a>
-              <a href="#" class="button nav__link">Контакты</a>
-            </div>
-            <div class="nav__ext-list">
-              <div class="nav__block">
-                <a href="#" class="text nav__ext-link">Виртуальная реальность</a>
-                <a href="#" class="text nav__ext-link">Моноподы для cелфи</a>
-                <a href="#" class="text nav__ext-link">Экшн-камеры</a>
-              </div>
-              <div class="nav__block">
-                <a href="#" class="text nav__ext-link">Фитнес-браслеты</a>
-                <a href="#" class="text nav__ext-link">Умные часы</a>
-              </div>
-              <div class="nav__block">
-                <a href="#" class="text nav__ext-link">Квадрокоптеры</a>
-              </div>
-            </div>
-          </nav>
+          <div class="user-block__tools">
+            <a href="#" class="text user-block__link user-block__link--compare">Сравнить</a>
+            <a href="#" class="text user-block__link user-block__link--cart">
+              <span class="user-block__cart-count">2</span>
+              Корзина
+            </a>
+          </div>
         </div>
       </div>
-    </header>
 
+      <nav class="nav">
+        <button class="nav__button" type="button">Каталог товаров</button>
+        <div class="nav__links">
+          <a href="#" class="nav__link">Доставка</a>
+          <a href="#" class="nav__link">Гарантия</a>
+          <a href="#" class="nav__link">Контакты</a>
+        </div>
+        <div class="nav__ext-list nav__ext-list--hidden">
+          <div>
+            <a href="#" class="text nav__ext-link">Виртуальная реальность</a>
+            <a href="#" class="text nav__ext-link">Моноподы для cелфи</a>
+            <a href="#" class="text nav__ext-link">Экшн-камеры</a>
+          </div>
+          <div>
+            <a href="#" class="text nav__ext-link">Фитнес-браслеты</a>
+            <a href="#" class="text nav__ext-link">Умные часы</a>
+          </div>
+          <div>
+            <a href="#" class="text nav__ext-link">Квадрокоптеры</a>
+          </div>
+        </div>
+      </nav>
+    </header>
     <main class="catalog">
       <div class="heading">
         <h2 class="text text--heading-main">Моноподы для селфи</h2>
