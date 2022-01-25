@@ -314,24 +314,27 @@
         </section>
       </div>
       <section class="mailing">
-        <div class="mailing__wrapper">
-          <h2 class="text text--heading-main">Подпишитесь
-            на рассылку</h2>
-          <p class="text mailing__description">
-            Еженедельный дайджест с обзорами новинок,
-            длительными тест-драйвами, распаковками, а также акции,
-            спецпредложения и вот это вот всё.
-          </p>
-        </div>
+        <div class="layout">
+          <div class="mailing__text-block">
+            <h2 class="text text--heading-main mailing__title">Подпишитесь на&nbsp;рассылку</h2>
+            <p class="text mailing__description">
+              Еженедельный дайджест с&nbsp;обзорами новинок,
+              длительными тест-драйвами, распаковками, а&nbsp;также акции,
+              спецпредложения и&nbsp;вот это вот всё.
+            </p>
+          </div>
 
-        <div class="mailing__wrapper">
-          <label class="mailing__label" for="mailing">
-            <input class="text mailing__input" name="mailing" id="mailing" type="text" placeholder="Ваш e-mail">
-          </label>
-          <button class="button button--outline mailing__button" type="button">
-            Подписаться
-          </button>
-          <p class="text mailing__description">Это бесплатно</p>
+          <form class="mailing__form" action="">
+            <div class="mailing__input-block">
+              <label class="mailing__label" for="mailing">
+                <input class="text mailing__input" name="mailing" id="mailing" type="text" placeholder="Ваш e-mail">
+              </label>
+              <button class="button button--outline mailing__button" type="button">
+                Подписаться
+              </button>
+            </div>
+            <p class="text mailing__features">Это бесплатно</p>
+          </form>
         </div>
       </section>
     </main>
