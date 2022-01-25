@@ -45,3 +45,39 @@
     outline-offset: 2px;
   }
 }
+
+.footer-state() {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    content: "";
+    width: 98%;
+    height: 2px;
+  }
+
+  &:hover {
+    color: @color-yellow-dark;
+
+    &::after {
+      background-color: @color-yellow-dark;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus-visible {
+    outline: 2px solid @color-purple;
+    outline-offset: 2px;
+  }
+}
+
+.footer-state--tel() {
+  &::after {
+    display: none;
+  }
+}
