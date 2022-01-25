@@ -6,14 +6,14 @@
 
 .footer__logo {
   .state();
-  display: block;
+  display: inline-block;
   margin-bottom: 32px;
 }
 
 .footer__text-block {
   margin-bottom: 48px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -22,6 +22,7 @@
   font-size: 16px;
   line-height: 19px;
   width: 240px;
+  margin-right: auto;
 }
 
 .footer__nav {
@@ -44,11 +45,12 @@
   font-size: 16px;
   line-height: 30px;
   text-align: right;
+  margin-left: auto;
 }
 
 .footer__links-block {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -56,11 +58,13 @@
   width: 80px;
   height: 7px;
   background-color: @color-yellow-dark;
+  margin-right: auto;
 }
 
 .footer__copyright {
   width: 115px;
   height: 33px;
+  margin-left: auto;
 
   &:hover svg path {
     fill: @color-white;

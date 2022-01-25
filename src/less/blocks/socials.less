@@ -1,0 +1,25 @@
+.socials {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.socials__link {
+  display: block;
+  height: 40px;
+  width: 40px;
+
+  &:hover svg circle {
+    fill: @color-yellow-dark;
+    fill-opacity: 1;
+  }
+
+  &:active svg path {
+    fill-opacity: 0.3;
+  }
+
+  &:focus-visible {
+    outline: 2px solid @color-purple;
+    outline-offset: 2px;
+  }
+}
