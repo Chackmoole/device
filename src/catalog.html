@@ -192,16 +192,20 @@
           </form>
         </section>
         <div class="catalog__inner">
-          <form class="sorting">
-            <label class="title title--h3">сортировка:
-              <input type="text" name="sorting" value="popular">
-            </label>
-            <ul class="sorting__list">
-              <li class="sorting__item" id="popular">Сначала популярные</li>
-              <li class="sorting__item" id="cost-low">Сначала дешёвые</li>
-              <li class="sorting__item" id="cost-high">Сначала дорогие</li>
-            </ul>
-            <div class="sorting__inner">
+          <div class="sorting">
+            <h3 class="sorting__title">сортировка:</h3>
+            <div class="sorting__items-block">
+              <a class="sorting__option" href="">Популярные
+                <span class="visually-hidden">Выбор метода сортировки</span>
+              </a>
+              <ul class="sorting__list">
+                <li class="sorting__item" id="popular">Популярные</li>
+                <li class="sorting__item" id="cost-low">Дешёвые</li>
+                <li class="sorting__item" id="cost-high">Дорогие</li>
+              </ul>
+            </div>
+
+            <div class="sorting__arrows-box">
               <a class="sorting__link sorting__link--up" href="#">
                 <span class="visually-hidden">сортировать по возрастания</span>
               </a>
@@ -209,7 +213,7 @@
                 <span class="visually-hidden">сортировать по убыванию</span>
               </a>
             </div>
-          </form>
+          </div>
 
           <ul class="cards-list">
             <li class="card">
