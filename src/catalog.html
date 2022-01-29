@@ -79,225 +79,224 @@
         </ul>
       </div>
       <div class="catalog__wrapper">
-        <section class="filter">
-          <h3 class="filter__title">Фильтр:</h3>
-          <form action="" method="get">
-            <div class="filter__block">
-              <h4 class="filter__subtitle">Стоимость</h4>
-              <div class="limitation">
-                <div class="limitation__inner">
-                  <span class="limitation__scale"></span>
-                  <span class="limitation__scale limitation__scale--active"></span>
-                  <button class="limitation__btn limitation__btn--min" type="button"></button>
-                  <button class="limitation__btn limitation__btn--max" type="button"></button>
+        <div class="layout catalog__inner">
+          <section class="filter">
+            <h3 class="filter__title">Фильтр:</h3>
+            <form action="" method="get">
+              <div class="filter__block">
+                <h4 class="filter__subtitle">Стоимость</h4>
+                <div class="limitation">
+                  <div class="limitation__inner">
+                    <span class="limitation__scale"></span>
+                    <span class="limitation__scale limitation__scale--active"></span>
+                    <button class="limitation__btn limitation__btn--min" type="button"></button>
+                    <button class="limitation__btn limitation__btn--max" type="button"></button>
+                  </div>
+                  <div class="limitation__inner">
+                    <label class="limitation__label">От
+                      <input class="limitation__input" name="cost-min" type="text" value="0">
+                    </label>
+                    <label class="limitation__label">До
+                      <input class="limitation__input" name="cost-high" type="text" value="5000">
+                    </label>
+                  </div>
                 </div>
-                <div class="limitation__inner">
-                  <label class="limitation__label">От
-                    <input class="limitation__input" name="cost-min" type="text" value="0">
-                  </label>
-                  <label class="limitation__label">До
-                    <input
-                        class="limitation__input" name="cost-high" type="text" value="5000"
+              </div>
+
+              <div class="filter__block">
+                <h4 class="filter__subtitle">Цвет</h4>
+
+                <label class="checkbox">
+                  <input
+                      class="checkbox__input visually-hidden" name="color-black" type="checkbox" checked
+                  >
+                  <span class="checkbox__custom">
+                    <svg
+                        class="checkbox__mark" width="10" height="10" viewBox="0 0 10 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                     >
-                  </label>
-                </div>
+                    <path d="M10 0L3.1 6.6L0 3.6V6.9L3.2 10L10 3.3V0Z" fill="black"/>
+                    </svg>
+                  </span>
+                  <span class="checkbox__text">Черный</span>
+                </label>
+                <label class="checkbox">
+                  <input
+                      class="checkbox__input visually-hidden" name="color-white" type="checkbox" checked
+                  >
+                  <span class="checkbox__custom">
+                    <svg
+                        class="checkbox__mark" width="10" height="10" viewBox="0 0 10 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                    <path d="M10 0L3.1 6.6L0 3.6V6.9L3.2 10L10 3.3V0Z" fill="black"/>
+                    </svg>
+                  </span>
+                  <span class="checkbox__text">Белый</span>
+                </label>
+                <label class="checkbox">
+                  <input
+                      class="checkbox__input visually-hidden" name="color-blue" type="checkbox"
+                  >
+                  <span class="checkbox__custom">
+                    <svg
+                        class="checkbox__mark" width="10" height="10" viewBox="0 0 10 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                    <path d="M10 0L3.1 6.6L0 3.6V6.9L3.2 10L10 3.3V0Z" fill="black"/>
+                    </svg>
+                  </span>
+                  <span class="checkbox__text">Синий</span>
+                </label>
+                <label class="checkbox">
+                  <input
+                      class="checkbox__input visually-hidden" name="color-red" type="checkbox"
+                  >
+                  <span class="checkbox__custom">
+                    <svg
+                        class="checkbox__mark" width="10" height="10" viewBox="0 0 10 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                    <path d="M10 0L3.1 6.6L0 3.6V6.9L3.2 10L10 3.3V0Z" fill="black"/>
+                    </svg>
+                  </span>
+                  <span class="checkbox__text">Красный</span>
+                </label>
+                <label class="checkbox">
+                  <input
+                      class="checkbox__input visually-hidden" name="color-pink" type="checkbox" disabled
+                  >
+                  <span class="checkbox__custom">
+                    <svg
+                        class="checkbox__mark" width="10" height="10" viewBox="0 0 10 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                    <path d="M10 0L3.1 6.6L0 3.6V6.9L3.2 10L10 3.3V0Z" fill="black"/>
+                    </svg>
+                  </span>
+                  <span class="checkbox__text">Розовый</span>
+                </label>
+              </div>
+
+              <div class="filter__block">
+                <h4 class="filter__subtitle">Bluetooth</h4>
+                <label class="radio">
+                  <input class="radio__input visually-hidden" type="radio" name="bluetooth" value="on" checked>
+                  <span class="radio__custom"></span>
+                  <span class="radio__text">Да</span>
+                </label>
+                <label class="radio">
+                  <input class="radio__input visually-hidden" type="radio" name="bluetooth" value="off" disabled>
+                  <span class="radio__custom"></span>
+                  <span class="radio__text">Нет</span>
+                </label>
+              </div>
+              <button class="button filter__button" type="button">Показать</button>
+            </form>
+          </section>
+          <div class="catalog__box">
+            <div class="sorting">
+              <h3 class="sorting__title">сортировка:</h3>
+              <div class="sorting__items-block">
+                <a class="sorting__option" href="">Популярные
+                  <span class="visually-hidden">Выбор метода сортировки</span>
+                </a>
+                <ul class="sorting__list">
+                  <li class="sorting__item" id="popular">Популярные</li>
+                  <li class="sorting__item" id="cost-low">Дешёвые</li>
+                  <li class="sorting__item" id="cost-high">Дорогие</li>
+                </ul>
+              </div>
+
+              <div class="sorting__arrows-box">
+                <a class="sorting__link sorting__link--up" href="#">
+                  <span class="visually-hidden">сортировать по возрастания</span>
+                </a>
+                <a class="sorting__link sorting__link--down sorting__link--active" href="#">
+                  <span class="visually-hidden">сортировать по убыванию</span>
+                </a>
               </div>
             </div>
 
-            <div class="filter__block">
-              <h4 class="filter__subtitle">Цвет</h4>
-
-              <label class="checkbox">
-                <input
-                    class="checkbox__input visually-hidden" name="color-black" type="checkbox" checked
-                >
-                <span class="checkbox__custom">
-                    <svg
-                        class="checkbox__mark" width="10" height="10" viewBox="0 0 10 10" fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                    <path d="M10 0L3.1 6.6L0 3.6V6.9L3.2 10L10 3.3V0Z" fill="black"/>
-                    </svg>
-                  </span>
-                <span class="checkbox__text">Черный</span>
-              </label>
-              <label class="checkbox">
-                <input
-                    class="checkbox__input visually-hidden" name="color-white" type="checkbox" checked
-                >
-                <span class="checkbox__custom">
-                    <svg
-                        class="checkbox__mark" width="10" height="10" viewBox="0 0 10 10" fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                    <path d="M10 0L3.1 6.6L0 3.6V6.9L3.2 10L10 3.3V0Z" fill="black"/>
-                    </svg>
-                  </span>
-                <span class="checkbox__text">Белый</span>
-              </label>
-              <label class="checkbox">
-                <input
-                    class="checkbox__input visually-hidden" name="color-blue" type="checkbox"
-                >
-                <span class="checkbox__custom">
-                    <svg
-                        class="checkbox__mark" width="10" height="10" viewBox="0 0 10 10" fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                    <path d="M10 0L3.1 6.6L0 3.6V6.9L3.2 10L10 3.3V0Z" fill="black"/>
-                    </svg>
-                  </span>
-                <span class="checkbox__text">Синий</span>
-              </label>
-              <label class="checkbox">
-                <input
-                    class="checkbox__input visually-hidden" name="color-red" type="checkbox"
-                >
-                <span class="checkbox__custom">
-                    <svg
-                        class="checkbox__mark" width="10" height="10" viewBox="0 0 10 10" fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                    <path d="M10 0L3.1 6.6L0 3.6V6.9L3.2 10L10 3.3V0Z" fill="black"/>
-                    </svg>
-                  </span>
-                <span class="checkbox__text">Красный</span>
-              </label>
-              <label class="checkbox">
-                <input
-                    class="checkbox__input visually-hidden" name="color-pink" type="checkbox" disabled
-                >
-                <span class="checkbox__custom">
-                    <svg
-                        class="checkbox__mark" width="10" height="10" viewBox="0 0 10 10" fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                    <path d="M10 0L3.1 6.6L0 3.6V6.9L3.2 10L10 3.3V0Z" fill="black"/>
-                    </svg>
-                  </span>
-                <span class="checkbox__text">Розовый</span>
-              </label>
-            </div>
-
-            <div class="filter__block">
-              <h4 class="filter__subtitle">Bluetooth</h4>
-              <label class="radio">
-                <input class="radio__input visually-hidden" type="radio" name="bluetooth" value="on" checked>
-                <span class="radio__custom"></span>
-                <span class="radio__text">Да</span>
-              </label>
-              <label class="radio">
-                <input class="radio__input visually-hidden" type="radio" name="bluetooth" value="off" disabled>
-                <span class="radio__custom"></span>
-                <span class="radio__text">Нет</span>
-              </label>
-            </div>
-            <button class="button filter__button" type="button">Показать</button>
-          </form>
-        </section>
-        <div class="catalog__inner">
-          <div class="sorting">
-            <h3 class="sorting__title">сортировка:</h3>
-            <div class="sorting__items-block">
-              <a class="sorting__option" href="">Популярные
-                <span class="visually-hidden">Выбор метода сортировки</span>
-              </a>
-              <ul class="sorting__list">
-                <li class="sorting__item" id="popular">Популярные</li>
-                <li class="sorting__item" id="cost-low">Дешёвые</li>
-                <li class="sorting__item" id="cost-high">Дорогие</li>
-              </ul>
-            </div>
-
-            <div class="sorting__arrows-box">
-              <a class="sorting__link sorting__link--up" href="#">
-                <span class="visually-hidden">сортировать по возрастания</span>
-              </a>
-              <a class="sorting__link sorting__link--down sorting__link--active" href="#">
-                <span class="visually-hidden">сортировать по убыванию</span>
-              </a>
-            </div>
-          </div>
-
-          <ul class="cards-list">
-            <li class="card">
-              <a class="card__link" href="#">
-                <img
-                    class="card__img" src="./img/product-1.png" width="360"
-                    height="380" alt="Любительская селфи-палка"
-                >
-                <div class="card__inner">
-                  <p class="text text--heading-third card__description">Любительская селфи-палка</p>
-                  <p class="card__cost">500 ₽</p>
-                </div>
-              </a>
-              <button class="button card__button" type="button">Подробнее</button>
-            </li>
-            <li class="card">
-              <a class="card__link" href="#">
-                <img
-                    class="card__img" src="./img/product-2.png" width="360"
-                    height="380" alt="Профессиональная селфи-палка "
-                >
-                <div class="card__inner">
-                  <p class="text text--heading-third card__description">Профессиональная селфи-палка </p>
-                  <p class="card__cost">1 500 ₽</p>
-                </div>
-              </a>
-              <button class="button card__button" type="button">Подробнее</button>
-            </li>
-            <li class="card">
-              <a class="card__link" href="#">
-                <img
-                    class="card__img" src="./img/product-3.png" width="360"
-                    height="380" alt="Непотопляемая селфи-палка"
-                >
-                <div class="card__inner">
-                  <p class="text text--heading-third card__description">Непотопляемая селфи-палка</p>
-                  <p class="card__cost">2 500 ₽</p>
-                </div>
-              </a>
-              <button class="button card__button" type="button">Подробнее</button>
-            </li>
-            <li class="card">
-              <a class="card__link" href="#">
-                <img
-                    class="card__img" src="./img/product-4.png" width="360"
-                    height="380" alt="Селфи-палка «Следуй за мной»"
-                >
-                <div class="card__inner">
-                  <p class="text text--heading-third card__description">Селфи-палка «Следуй за мной»</p>
-                  <p class="card__cost">4 900 ₽</p>
-                </div>
-              </a>
-              <button class="button card__button" type="button">Подробнее</button>
-            </li>
-          </ul>
-          <button class="button button--outline card__button-download" type="button">Загрузить еще</button>
-          <section class="pagination">
-            <a href="#" class="pagination__button pagination__button--prev">Назад</a>
-            <ul class="pagination__list">
-              <li>
-                <a href="#" class="pagination__link">1</a>
+            <ul class="cards-list">
+              <li class="card">
+                <a class="card__link" href="#">
+                  <img
+                      class="card__img" src="./img/product-1.png" width="360"
+                      height="380" alt="Любительская селфи-палка"
+                  >
+                  <div class="card__inner">
+                    <p class="text text--heading-third card__description">Любительская селфи-палка</p>
+                    <p class="card__cost">500 ₽</p>
+                  </div>
+                </a>
+                <button class="button card__button" type="button">Подробнее</button>
               </li>
-              <li>
-                <a href="#" class="pagination__link">2</a>
+              <li class="card">
+                <a class="card__link" href="#">
+                  <img
+                      class="card__img" src="./img/product-2.png" width="360"
+                      height="380" alt="Профессиональная селфи-палка "
+                  >
+                  <div class="card__inner">
+                    <p class="text text--heading-third card__description">Профессиональная селфи-палка </p>
+                    <p class="card__cost">1 500 ₽</p>
+                  </div>
+                </a>
+                <button class="button card__button" type="button">Подробнее</button>
               </li>
-              <li>
-                <a href="#" class="pagination__link">3</a>
+              <li class="card">
+                <a class="card__link" href="#">
+                  <img
+                      class="card__img" src="./img/product-3.png" width="360"
+                      height="380" alt="Непотопляемая селфи-палка"
+                  >
+                  <div class="card__inner">
+                    <p class="text text--heading-third card__description">Непотопляемая селфи-палка</p>
+                    <p class="card__cost">2 500 ₽</p>
+                  </div>
+                </a>
+                <button class="button card__button" type="button">Подробнее</button>
               </li>
-              <li>
-                <a href="#" class="pagination__link">...</a>
-              </li>
-              <li>
-                <a href="#" class="pagination__link">15</a>
+              <li class="card">
+                <a class="card__link" href="#">
+                  <img
+                      class="card__img" src="./img/product-4.png" width="360"
+                      height="380" alt="Селфи-палка «Следуй за мной»"
+                  >
+                  <div class="card__inner">
+                    <p class="text text--heading-third card__description">Селфи-палка «Следуй за мной»</p>
+                    <p class="card__cost">4 900 ₽</p>
+                  </div>
+                </a>
+                <button class="button card__button" type="button">Подробнее</button>
               </li>
             </ul>
-            <a href="#" class="pagination__button pagination__button--next">Вперед</a>
-          </section>
+            <button class="button button--outline cards-list__button-download" type="button">Загрузить еще</button>
+            <section class="pagination">
+              <a href="#" class="pagination__button pagination__button--prev">Назад</a>
+              <ul class="pagination__list">
+                <li>
+                  <a href="#" class="pagination__link">1</a>
+                </li>
+                <li>
+                  <a href="#" class="pagination__link">2</a>
+                </li>
+                <li>
+                  <a href="#" class="pagination__link">3</a>
+                </li>
+                <li>
+                  <a href="#" class="pagination__link">...</a>
+                </li>
+                <li>
+                  <a href="#" class="pagination__link">15</a>
+                </li>
+              </ul>
+              <a href="#" class="pagination__button pagination__button--next">Вперед</a>
+            </section>
+          </div>
         </div>
       </div>
-
     </main>
     <footer class="footer">
       <div class="layout">
