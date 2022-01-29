@@ -5,21 +5,15 @@
   margin: 0;
   margin-bottom: 32px;
   list-style: none;
-
-  & li:last-child {
-    margin-right: 0;
-    padding-right: 0;
-  }
-
-  & li:last-child::after {
-    display: none;
-  }
 }
 
 .breadcrumbs__item {
   position: relative;
-  padding-right: 20px;
-  margin-right: 16px;
+
+  &:not(:last-child) {
+    padding-right: 20px;
+    margin-right: 16px;
+  }
 
   &::after {
     position: absolute;
