@@ -34,10 +34,59 @@
 
           <div class="user-block__tools">
             <a href="#" class="text user-block__link user-block__link--compare">Сравнить</a>
-            <a href="#" class="text user-block__link user-block__link--cart">
-              <span class="user-block__cart-count">2</span>
-              Корзина
-            </a>
+            <div class="user-block__cart-box">
+              <a href="#" class="text user-block__link user-block__link--cart">
+                <span class="user-block__cart-count">2</span>
+                Корзина
+              </a>
+              <section class="cart-popup">
+                <ul class="cart-popup__list">
+                  <li class="cart-popup__item">
+                    <a class="text cart-popup__link" href="#">
+                      <img class="cart-popup__img-mini" src="img/product-1-small-5.jpg" alt="Любительская селфи-палка">
+                      Любительская селфи-палка
+                    </a>
+                    <button class="button-close" type="button"><span
+                        class="visually-hidden"
+                    >убрать товар из корзины</span>
+                    </button>
+                  </li>
+                  <li class="cart-popup__item">
+                    <a class="text cart-popup__link" href="#">
+                      <img
+                          class="cart-popup__img-mini" src="img/product-1-small-6.jpg"
+                          alt="Профессиональная селфи-палка"
+                      >
+                      Профессиональная селфи-палка
+                    </a>
+                    <button class="button-close" type="button"><span
+                        class="visually-hidden"
+                    >убрать товар из корзины</span>
+                    </button>
+                  </li>
+                </ul>
+                <form class="cart-popup__form" method="post">
+                  <div class="cart-popup__labels">
+                    <label class="text cart-popup__label" for="goods">
+                      Товаров:
+                      <input
+                          class="cart-popup__input cart-popup__input--count" name="goods" id="goods" type="text"
+                          value="2"
+                      >
+                    </label>
+                    <label class="text cart-popup__label" for="cart-cost">
+                      Сумма:
+                      <input class="text cart-popup__input" name="cart-cost" id="cart-cost" type="text" value="2000 ₽">
+
+                    </label>
+                  </div>
+                  <div class="cart-popup__buttons">
+                    <button class="cart-popup__button" type="button">Открыть корзину</button>
+                  </div>
+
+                </form>
+              </section>
+            </div>
           </div>
         </div>
       </div>
@@ -446,46 +495,6 @@
         </div>
       </div>
     </footer>
-
-    <section class="cart-popup">
-      <ul class="cart-popup__list">
-        <li>
-          <a class="text cart-popup__link" href="#">
-            <img class="cart-popup__img-mini" src="" alt="Любительская селфи-палка">
-            Любительская селфи-палка
-          </a>
-          <button class="button-close cart-popup__close" type="button"><span
-              class="visually-hidden"
-          >убрать товар из корзины</span>
-          </button>
-        </li>
-        <li>
-          <a class="text cart-popup__link" href="#">
-            <img
-                class="cart-popup__img-mini" src="" alt="Профессиональная селфи-палка"
-            >
-            Профессиональная селфи-палка
-          </a>
-          <button class="button-close cart-popup__close" type="button"><span
-              class="visually-hidden"
-          >убрать товар из корзины</span>
-          </button>
-        </li>
-      </ul>
-      <form class="cart-popup__form" method="post">
-        <label class="text cart-popup__label" for="goods">
-          Товаров:
-          <input class="cart-popup__input" name="goods" id="goods" type="text" value="2">
-        </label>
-        <label class="text cart-popup__label" for="cart-cost">
-          Сумма:
-          <input class="text cart-popup__input" name="cart-cost" id="cart-cost" type="text" value="2000">
-          ₽
-        </label>
-        <button class="button cart-popup__button" type="button">Открыть корзину</button>
-      </form>
-    </section>
-
     <section class="delivery-popup">
       <h2 class="text text--heading-main delivery-popup__title">Доставка под заказ</h2>
       <button class="button-close delivery-popup__close" type="button"><span

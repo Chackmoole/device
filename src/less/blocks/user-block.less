@@ -1,4 +1,5 @@
 .user-block {
+  position: relative;
   display: flex;
   justify-content: space-between;
   gap: 16px;
@@ -32,6 +33,10 @@
 
   &--compare::before {
     background-image: url("../../img/compare-icon.svg");
+  }
+
+  &--cart:hover ~ .cart-popup {
+    display: block;
   }
 
   &--cart::before {
