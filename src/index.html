@@ -495,44 +495,73 @@
         </div>
       </div>
     </footer>
-    <section class="delivery-popup">
-      <h2 class="text text--heading-main delivery-popup__title">Доставка под заказ</h2>
-      <button class="button-close delivery-popup__close" type="button"><span
-          class="visually-hidden"
-      >Закрыть окно заказа</span>
-      </button>
-      <form class="delivery-popup__form" method="post">
-        <label class="text text--heading-third delivery-popup__label" for="name">
-          Ваше имя:
-          <input class="delivery-popup__input" name="name" id="name" type="text" placeholder="Имя Фамилия">
-          <span class="delivery-popup__description delivery-popup__description--error">Пожалуйста, представьтесь</span>
-        </label>
-        <label class="text text--heading-third delivery-popup__label" for="email">
-          Ваш e-mail:
-          <input class="delivery-popup__input" name="email" id="email" type="text" placeholder="Введите вашу почту">
-          <span class="delivery-popup__description">Забавный у вас адрес</span>
-        </label>
-        <label class="text text--heading-third delivery-popup__label" for="delivery-about">
-          Что нужно привезти:
-          <textarea
-              class="delivery-popup__textarea"
-              name="delivery-about" id="delivery-about" cols="40" rows="1" placeholder="В свободной форме"
+    <section class="delivery-modal">
+      <div class="delivery-modal__inner">
+        <div class="delivery-modal__heading-box">
+          <h2 class="text text--heading-main delivery-modal__title">Доставка под заказ</h2>
+          <button class="button-close delivery-modal__close" type="button"><span
+              class="visually-hidden"
+          >Закрыть окно заказа</span>
+          </button>
+        </div>
+
+        <form class="delivery-modal__form" method="post">
+          <label
+              class="text text--heading-third delivery-modal__label delivery-modal__label-icon
+             delivery-modal__label-icon--user" for="name"
           >
-          </textarea>
-        </label>
-        <label class="text text--heading-third delivery-popup__label" for="counter">
-          Количество:
-          <span class="delivery-popup__info"></span>
-          <button class="delivery-popup__button delivery-popup__button-increase" type="button">
-            <span class="visually-hidden">уменьшить количество товаров</span>
-          </button>
-          <input class="delivery-popup__counter" name="counter" id="counter" type="text" value="1">
-          <button class="delivery-popup__button delivery-popup__button-decrease" type="button">
-            <span class="visually-hidden">увеличить количество товаров</span>
-          </button>
-        </label>
-        <button class="button">Отправить</button>
-      </form>
+            <span class="delivery-modal__subtitle">Ваше имя:</span>
+            <input
+                class="delivery-modal__input delivery-modal__input--icon" name="name" id="name" type="text"
+                placeholder="Имя Фамилия"
+            >
+            <span
+                class="delivery-modal__description delivery-modal__description--error"
+            >Пожалуйста, представьтесь</span>
+          </label>
+          <label class="text text--heading-third delivery-modal__label delivery-modal__label-icon" for="email">
+            <span class="delivery-modal__subtitle">Ваш e-mail:</span>
+            <input
+                class="delivery-modal__input delivery-modal__input--icon delivery-modal__input--error" name="email"
+                id="email" type="text"
+                placeholder="Введите вашу почту"
+                value="почта"
+            >
+            <span class="delivery-modal__description">Забавный у вас адрес</span>
+          </label>
+          <label
+              class="text text--heading-third delivery-modal__label delivery-modal__label--textarea"
+              for="delivery-about"
+          >
+            <span class="delivery-modal__subtitle">Что нужно привезти:</span>
+            <textarea
+                class="delivery-modal__textarea"
+                name="delivery-about" id="delivery-about" cols="40" rows="1" placeholder="В свободной форме"
+            ></textarea>
+          </label>
+          <label class="text text--heading-third delivery-modal__label delivery-modal__label--counter" for="counter">
+          <span class="delivery-modal__subtitle">Количество:
+            <span class="delivery-modal__info">
+                <span class="delivery-modal__info-popup">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
+                  к провозу багажа.
+                </span>
+            </span>
+          </span>
+            <span class="delivery-modal__box">
+            <button class="delivery-modal__button delivery-modal__button-increase" type="button">-
+              <span class="visually-hidden">уменьшить количество товаров</span>
+            </button>
+            <input
+                class="delivery-modal__input delivery-modal__counter" name="counter" id="counter" type="text" value="1"
+            >
+            <button class="delivery-modal__button delivery-modal__button-decrease" type="button">+
+              <span class="visually-hidden">увеличить количество товаров</span>
+            </button>
+          </span>
+          </label>
+          <button class="button">Отправить</button>
+        </form>
+      </div>
     </section>
   </body>
 </html>
