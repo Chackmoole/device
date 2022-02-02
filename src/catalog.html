@@ -34,10 +34,55 @@
 
           <div class="user-block__tools">
             <a href="#" class="text user-block__link user-block__link--compare">Сравнить</a>
-            <a href="#" class="text user-block__link user-block__link--cart">
-              <span class="user-block__cart-count">2</span>
-              Корзина
-            </a>
+            <div class="user-block__cart-box">
+              <a href="#" class="text user-block__link user-block__link--cart">
+                <span class="user-block__cart-count">2</span>
+                Корзина
+              </a>
+              <section class="cart-popup">
+                <ul class="cart-popup__list">
+                  <li class="cart-popup__item">
+                    <a class="text cart-popup__link" href="#">
+                      <img class="cart-popup__img-mini" src="img/product-1-small-5.jpg" alt="Любительская селфи-палка">
+                      Любительская селфи-палка
+                    </a>
+                    <button class="button-close" type="button"><span
+                        class="visually-hidden"
+                    >убрать товар из корзины</span>
+                    </button>
+                  </li>
+                  <li class="cart-popup__item">
+                    <a class="text cart-popup__link" href="#">
+                      <img
+                          class="cart-popup__img-mini" src="img/product-1-small-6.jpg"
+                          alt="Профессиональная селфи-палка"
+                      >
+                      Профессиональная селфи-палка
+                    </a>
+                    <button class="button-close" type="button"><span
+                        class="visually-hidden"
+                    >убрать товар из корзины</span>
+                    </button>
+                  </li>
+                </ul>
+                <div class="cart-popup__cost">
+                  <div class="text cart-popup__description">
+                    Товаров:
+                    <span class="cart-popup__count-goods">
+                      2
+                    </span>
+                  </div>
+                  <div class="text cart-popup__description">
+                    Сумма:
+                    <span class="cart-popup__count-sum">2000</span>
+                    ₽
+                  </div>
+                </div>
+                <div class="cart-popup__buttons">
+                  <button class="cart-popup__button" type="button">Открыть корзину</button>
+                </div>
+              </section>
+            </div>
           </div>
         </div>
       </div>
