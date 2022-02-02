@@ -65,26 +65,22 @@
                     </button>
                   </li>
                 </ul>
-                <form class="cart-popup__form" method="post">
-                  <div class="cart-popup__labels">
-                    <label class="text cart-popup__label" for="goods">
-                      Товаров:
-                      <input
-                          class="cart-popup__input cart-popup__input--count" name="goods" id="goods" type="text"
-                          value="2"
-                      >
-                    </label>
-                    <label class="text cart-popup__label" for="cart-cost">
-                      Сумма:
-                      <input class="text cart-popup__input" name="cart-cost" id="cart-cost" type="text" value="2000 ₽">
-
-                    </label>
+                <div class="cart-popup__cost">
+                  <div class="text cart-popup__description">
+                    Товаров:
+                    <span class="cart-popup__count-goods">
+                      2
+                    </span>
                   </div>
-                  <div class="cart-popup__buttons">
-                    <button class="cart-popup__button" type="button">Открыть корзину</button>
+                  <div class="text cart-popup__description">
+                    Сумма:
+                    <span class="cart-popup__count-sum">2000</span>
+                    ₽
                   </div>
-
-                </form>
+                </div>
+                <div class="cart-popup__buttons">
+                  <button class="cart-popup__button" type="button">Открыть корзину</button>
+                </div>
               </section>
             </div>
           </div>
