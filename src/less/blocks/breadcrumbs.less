@@ -4,21 +4,19 @@
   padding: 0;
   margin: 0;
   list-style: none;
-
-  & li:last-child {
-    margin-right: 0;
-    padding-right: 0;
-  }
-
-  & li:last-child::after {
-    display: none;
-  }
 }
 
 .breadcrumbs__item {
   position: relative;
-  padding-right: 20px;
-  margin-right: 16px;
+
+  &:not(:last-child) {
+    padding-right: 20px;
+    margin-right: 16px;
+  }
+
+  &:last-child::after {
+    display: none;
+  }
 
   &::after {
     position: absolute;
