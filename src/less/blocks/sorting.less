@@ -46,14 +46,13 @@
   padding: 0;
 }
 
-.sorting__arrows-box {
+.sorting__arrows {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
 
 .sorting__link {
-  .sorting-state();
   display: block;
   width: 30px;
   height: 30px;
@@ -64,5 +63,19 @@
 
   &--down {
     transform: rotate(180deg);
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+
+  &:focus-visible {
+    outline: 2px solid @color-purple;
+    outline-offset: 2px;
+    opacity: 1;
   }
 }
