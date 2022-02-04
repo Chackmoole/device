@@ -44,6 +44,14 @@
   &--counter {
     width: 172px;
   }
+
+  &--error .delivery-modal__input {
+    border: 2px solid @color-error;
+  }
+
+  &--error .delivery-modal__description {
+    color: @color-error;
+  }
 }
 
 .delivery-modal__email-icon {
@@ -149,12 +157,4 @@
     background-color: @color-gray-silver;
     color: fade(@color-black, 30%);
   }
-}
-
-.delivery-modal__error .delivery-modal__input {
-  border: 2px solid @color-error;
-}
-
-.delivery-modal__error .delivery-modal__description {
-  color: @color-error;
 }
