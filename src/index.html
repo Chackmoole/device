@@ -492,50 +492,69 @@
       </div>
     </footer>
     <section class="delivery-modal">
-      <div class="delivery-modal__inner">
-        <div class="delivery-modal__heading-box">
-          <h2 class="text text--heading-main delivery-modal__title">Доставка под заказ</h2>
-          <button class="button-close delivery-modal__close" type="button"><span
-              class="visually-hidden"
-          >Закрыть окно заказа</span>
-          </button>
-        </div>
 
-        <form class="delivery-modal__form" method="post">
-          <label
-              class="text text--heading-third delivery-modal__label delivery-modal__label-icon
-             delivery-modal__label-icon--user" for="name"
+      <div class="delivery-modal__header">
+        <h2 class="text text--heading-main">Доставка под заказ</h2>
+        <button class="button-close delivery-modal__close" type="button"><span
+            class="visually-hidden"
+        >Закрыть окно заказа</span>
+        </button>
+      </div>
+
+      <form class="delivery-modal__form" method="post">
+        <label
+            class="text text--heading-third delivery-modal__label" for="name"
+        >
+          <span class="delivery-modal__subtitle">Ваше имя:</span>
+          <input
+              class="delivery-modal__input" name="name" id="name" type="text"
+              placeholder="Имя Фамилия"
           >
-            <span class="delivery-modal__subtitle">Ваше имя:</span>
-            <input
-                class="delivery-modal__input delivery-modal__input--icon" name="name" id="name" type="text"
-                placeholder="Имя Фамилия"
-            >
-            <span
-                class="delivery-modal__description delivery-modal__description--error"
-            >Пожалуйста, представьтесь</span>
-          </label>
-          <label class="text text--heading-third delivery-modal__label delivery-modal__label-icon" for="email">
-            <span class="delivery-modal__subtitle">Ваш e-mail:</span>
-            <input
-                class="delivery-modal__input delivery-modal__input--icon delivery-modal__input--error" name="email"
-                id="email" type="text"
-                placeholder="Введите вашу почту"
-                value="почта"
-            >
-            <span class="delivery-modal__description">Забавный у вас адрес</span>
-          </label>
-          <label
-              class="text text--heading-third delivery-modal__label delivery-modal__label--textarea"
-              for="delivery-about"
+          <svg
+              class="delivery-modal__email-icon" width="15" height="12" viewBox="0 0 15 12" fill="none"
+              xmlns="http://www.w3.org/2000/svg"
           >
-            <span class="delivery-modal__subtitle">Что нужно привезти:</span>
-            <textarea
-                class="delivery-modal__textarea"
-                name="delivery-about" id="delivery-about" cols="40" rows="1" placeholder="В свободной форме"
-            ></textarea>
-          </label>
-          <label class="text text--heading-third delivery-modal__label delivery-modal__label--counter" for="counter">
+            <path
+                d="M1 12H14C13.8 9.4 11.9 7.2 9.3 6.5C10.3 5.9 11 4.8 11 3.5C11 1.6 9.4 0 7.5 0C5.6 0 4 1.6 4 3.5C4 4.8 4.7 5.9 5.7 6.5C3.1 7.2 1.2 9.4 1 12Z"
+                fill="#B3B3B3"
+            />
+          </svg>
+
+          <span class="delivery-modal__description delivery-modal__description--error">
+            Пожалуйста, представьтесь
+          </span>
+        </label>
+        <label class="text text--heading-third delivery-modal__label delivery-modal__error" for="email">
+          <span class="delivery-modal__subtitle">Ваш e-mail:</span>
+          <input
+              class="delivery-modal__input" name="email"
+              id="email" type="text"
+              placeholder="Введите вашу почту"
+              value="почта"
+          >
+          <svg
+              class="delivery-modal__email-icon" width="15" height="12" viewBox="0 0 15 12" fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+                d="M7.6 8C7.2 8 7 7.9 6.6 7.7L0 4V11C0 11.6 0.4 12 0.9 12H14.1C14.7 12 15 11.6 15 11V4L8.5 7.7C8.1 7.9 7.9 8 7.6 8ZM14.1 0H0.9C0.4 0 0 0.5 0 1V1.8L7.5 6L15 1.8V1C15 0.5 14.6 0 14.1 0Z"
+                fill="#B3B3B3"
+            />
+          </svg>
+
+          <span class="delivery-modal__description">Забавный у вас адрес</span>
+        </label>
+        <label
+            class="text text--heading-third delivery-modal__label delivery-modal__label--discription"
+            for="delivery-about"
+        >
+          <span class="delivery-modal__subtitle">Что нужно привезти:</span>
+          <input
+              class="delivery-modal__input"
+              name="delivery-about" id="delivery-about" placeholder="В свободной форме"
+          >
+        </label>
+        <label class="text text--heading-third delivery-modal__label delivery-modal__label--counter" for="counter">
           <span class="delivery-modal__subtitle">Количество:
             <span class="delivery-modal__info">
                 <span class="delivery-modal__info-popup">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
@@ -543,7 +562,7 @@
                 </span>
             </span>
           </span>
-            <span class="delivery-modal__box">
+          <span class="delivery-modal__box">
             <button class="delivery-modal__button delivery-modal__button-increase" type="button">-
               <span class="visually-hidden">уменьшить количество товаров</span>
             </button>
@@ -554,10 +573,11 @@
               <span class="visually-hidden">увеличить количество товаров</span>
             </button>
           </span>
-          </label>
-          <button class="button">Отправить</button>
-        </form>
-      </div>
+        </label>
+        <button class="button">Отправить</button>
+      </form>
+
     </section>
+    <div class="overlay"></div>
   </body>
 </html>

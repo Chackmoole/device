@@ -1,14 +1,5 @@
 .delivery-modal {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(240, 240, 240, 0.9);
-}
-
-.delivery-modal__inner {
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -17,18 +8,14 @@
   background-color: @color-white;
   border: 10px solid @color-black;
   box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
+  z-index: 1;
 }
 
-.delivery-modal__heading-box {
+.delivery-modal__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 40px;
-}
-
-.delivery-modal__title {
-  width: 700px;
-  display: inline-block;
 }
 
 .delivery-modal__close {
@@ -50,7 +37,7 @@
   flex-direction: column;
   width: 360px;
 
-  &--textarea {
+  &--discription {
     width: 548px;
   }
 
@@ -59,23 +46,13 @@
   }
 }
 
-.delivery-modal__label-icon {
-  &::after {
-    content: "";
-    position: absolute;
-    top: 58px;
-    right: 20px;
-    width: 15px;
-    height: 12px;
-    background-image: url("../../img/mail-icon.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 3;
-  }
-
-  &--user::after {
-    background-image: url("../../img/user-icon-modal.svg");
-  }
+.delivery-modal__email-icon {
+  position: absolute;
+  top: 58px;
+  right: 20px;
+  width: 15px;
+  height: 12px;
+  z-index: 3;
 }
 
 .delivery-modal__input {
@@ -86,28 +63,12 @@
   height: 60px;
   padding: 20px;
 
-  &--icon {
-    padding-right: 60px;
-  }
-
-  &--error {
-    .error();
-
-    & + .delivery-modal__description {
-      color: @color-error;
-    }
-  }
-
   &::placeholder {
     color: fade(@color-black, 30%);
   }
 
   &:hover {
     background-color: @color-gray;
-  }
-
-  &--arror {
-    .error();
   }
 }
 
@@ -161,27 +122,6 @@
   font-weight: 400;
 }
 
-.delivery-modal__textarea {
-  .text-small();
-  .focus();
-  background-color: @color-gray-silver;
-  height: 60px;
-  padding: 20px;
-  border: none;
-
-  &::placeholder {
-    color: fade(@color-black, 30%);
-  }
-
-  &:hover {
-    background-color: @color-gray;
-  }
-
-  &--arror {
-    .error();
-  }
-}
-
 .delivery-modal__counter {
   width: 56px;
   padding: 20px 10px;
@@ -192,10 +132,6 @@
 .delivery-modal__box {
   display: flex;
   align-items: center;
-
-  &--error {
-    .error();
-  }
 }
 
 .delivery-modal__button {
@@ -213,4 +149,12 @@
     background-color: @color-gray-silver;
     color: fade(@color-black, 30%);
   }
+}
+
+.delivery-modal__error .delivery-modal__input {
+  border: 2px solid @color-error;
+}
+
+.delivery-modal__error .delivery-modal__description {
+  color: @color-error;
 }
