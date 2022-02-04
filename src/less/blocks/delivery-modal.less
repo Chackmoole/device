@@ -37,7 +37,7 @@
   flex-direction: column;
   width: 360px;
 
-  &--discription {
+  &--description {
     width: 548px;
   }
 
@@ -54,7 +54,7 @@
   }
 }
 
-.delivery-modal__email-icon {
+.delivery-modal__icon {
   position: absolute;
   top: 58px;
   right: 20px;
@@ -77,6 +77,13 @@
 
   &:hover {
     background-color: @color-gray;
+  }
+
+  &--counter {
+    width: 56px;
+    padding: 20px 10px;
+    text-align: center;
+    z-index: 2;
   }
 }
 
@@ -128,13 +135,6 @@
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-}
-
-.delivery-modal__counter {
-  width: 56px;
-  padding: 20px 10px;
-  text-align: center;
-  z-index: 2;
 }
 
 .delivery-modal__box {

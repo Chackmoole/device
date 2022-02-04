@@ -511,7 +511,7 @@
               placeholder="Имя Фамилия"
           >
           <svg
-              class="delivery-modal__email-icon" width="15" height="12" viewBox="0 0 15 12" fill="none"
+              class="delivery-modal__icon" width="15" height="12" viewBox="0 0 15 12" fill="none"
               xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -520,7 +520,7 @@
             />
           </svg>
 
-          <span class="delivery-modal__description delivery-modal__description--error">
+          <span class="delivery-modal__description">
             Пожалуйста, представьтесь
           </span>
         </label>
@@ -533,7 +533,7 @@
               value="почта"
           >
           <svg
-              class="delivery-modal__email-icon" width="15" height="12" viewBox="0 0 15 12" fill="none"
+              class="delivery-modal__icon" width="15" height="12" viewBox="0 0 15 12" fill="none"
               xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -545,7 +545,7 @@
           <span class="delivery-modal__description">Забавный у вас адрес</span>
         </label>
         <label
-            class="text text--heading-third delivery-modal__label delivery-modal__label--discription"
+            class="text text--heading-third delivery-modal__label delivery-modal__label--description"
             for="delivery-about"
         >
           <span class="delivery-modal__subtitle">Что нужно привезти:</span>
@@ -567,7 +567,8 @@
               <span class="visually-hidden">уменьшить количество товаров</span>
             </button>
             <input
-                class="delivery-modal__input delivery-modal__counter" name="counter" id="counter" type="text" value="1"
+                class="delivery-modal__input delivery-modal__input--counter" name="counter" id="counter" type="text"
+                value="1"
             >
             <button class="delivery-modal__button delivery-modal__button-decrease" type="button">+
               <span class="visually-hidden">увеличить количество товаров</span>
