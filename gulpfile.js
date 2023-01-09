@@ -25,40 +25,37 @@ export const styles = () => {
             csso()
         ]))
         .pipe(rename('style.min.css'))
-        .pipe(gulp.dest('build/css', {srcmaps: '.'}))
+        .pipe(gulp.dest('docs/css', {srcmaps: '.'}))
         .pipe(browser.stream());
 }
 
 
 // HTML
-
 const html = () => {
     return gulp.src('src/*.html')
         .pipe(htmlmin({collapseWhitespace: true}))
-        .pipe(gulp.dest('build'));
+        .pipe(gulp.dest('docs'));
 }
 
 // Scripts
-
 const scripts = () => {
     return gulp.src('src/js/script.js')
         .pipe(terser())
         .pipe(rename('script.min.js'))
-        .pipe(gulp.dest('build/js'))
+        .pipe(gulp.dest('docs/js'))
         .pipe(browser.stream());
 }
 
 // Images
-
 const optimizeImages = () => {
     return gulp.src('src/img//*.{png,jpg}')
         .pipe(squoosh())
-        .pipe(gulp.dest('build/img'))
+        .pipe(gulp.dest('docs/img'))
 }
 
 const copyImages = () => {
     return gulp.src('src/img//*.{png,jpg}')
-        .pipe(gulp.dest('build/img'))
+        .pipe(gulp.dest('docs/img'))
 }
 
 // WebP
@@ -66,15 +63,14 @@ const copyImages = () => {
 const createWebp = () => {
     return gulp.src('src/img//*.{png,jpg}')
         .pipe(webp({quality: 90}))
-        .pipe(gulp.dest('build/img'))
+        .pipe(gulp.dest('docs/img'))
 }
 
 // SVG
-
 const svg = () =>
     gulp.src(['src/img/*.svg', '!src/img/icons/*.svg'])
         .pipe(svgo())
-        .pipe(gulp.dest('build/img'));
+        .pipe(gulp.dest('docs/img'));
 
 const sprite = () => {
     return gulp.src('src/img/icons/*.svg')
@@ -82,11 +78,10 @@ const sprite = () => {
             inlineSvg: true
         }))
         .pipe(rename('sprite.svg'))
-        .pipe(gulp.dest('build/img'));
+        .pipe(gulp.dest('docs/img'));
 }
 
 // Copy
-
 const copy = (done) => {
     gulp.src([
         'src/fonts/*.{woff2,woff}',
@@ -94,7 +89,7 @@ const copy = (done) => {
     ], {
         base: 'src'
     })
-        .pipe(gulp.dest('build'))
+        .pipe(gulp.dest('dosc'))
     done();
 }
 
@@ -102,7 +97,7 @@ const copy = (done) => {
 // Clean
 
 const clean = () => {
-    return del('build');
+    return del('docs');
 };
 
 // Server
@@ -110,7 +105,7 @@ const clean = () => {
 const server = (done) => {
     browser.init({
         server: {
-            baseDir: 'build'
+            baseDir: 'docs'
         },
         cors: true,
         notify: false,
@@ -135,7 +130,6 @@ const watcher = () => {
 }
 
 // Build
-
 export const build = gulp.series(
     clean,
     copy,
