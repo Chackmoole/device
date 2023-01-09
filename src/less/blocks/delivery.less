@@ -1,0 +1,52 @@
+.delivery {
+  position: relative;
+  .button-text();
+  display: block;
+  width: 100%;
+  min-height: 100px;
+  font-size: 20px;
+  line-height: 23px;
+  padding: 40px 144px;
+  margin-bottom: 70px;
+  text-align: center;
+  background-color: @color-gray-silver;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 125px;
+    background-color: @color-yellow;
+    background-image: url("../../img/delivery.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  & svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 44px;
+  }
+
+  &:hover {
+    &::before {
+      background-color: @color-yellow-dark;
+    }
+
+    & svg g {
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline-color: @color-purple;
+    outline-offset: 2px;
+  }
+}

@@ -1,0 +1,98 @@
+.nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__links {
+  display: flex;
+  gap: 44px;
+}
+
+.nav__link {
+  .button-text();
+  .state();
+  position: relative;
+
+  &--active::after {
+    position: absolute;
+    content: "";
+    background: @color-black;
+    height: 2px;
+    width: 98%;
+    bottom: -4px;
+    left: 0;
+  }
+}
+
+.nav__button {
+  .button-text();
+  position: relative;
+  border: none;
+  background-color: transparent;
+  line-height: 50px;
+  padding: 0 58px 0 0;
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    content: "";
+    height: 50px;
+    width: 50px;
+    background-image: url("../../img/button-icon-plus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.3;
+    transition: 0.3s;
+  }
+
+  &--open {
+    &::after {
+      background-image: url("../../img/button-icon-minus.svg");
+    }
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+
+  &:focus {
+    outline-color: @color-purple;
+    outline-offset: 2px;
+  }
+
+  //временно для показа анимации
+  &:hover ~ .nav__ext-list--hidden {
+    display: flex;
+  }
+}
+
+.nav__ext-list {
+  position: absolute;
+  top: 100%;
+  left: -60px;
+  right: -60px;
+  display: flex;
+  gap: 68px;
+  z-index: 2;
+  padding: 16px 60px 30px;
+  background-color: @color-yellow;
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.nav__ext-link {
+  .state();
+  display: block;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 1px 0;
+  margin-bottom: 18px;
+  text-decoration: none;
+}
+
